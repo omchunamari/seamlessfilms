@@ -18,7 +18,7 @@
     </div>
     <nav>
         <div class="logo">
-            <a href="#top"><video src="./Sequence 01.mp4" autoplay></video></a>
+            <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
             <ul class="nav-items">
@@ -69,11 +69,11 @@
 
 
     $(window).on('load', function () {
-      setTimeout(removeLoader, 1200); // Wait for page load PLUS two seconds
+      setTimeout(removeLoader, 1000); // Wait for page load PLUS two seconds
     });
 
     function removeLoader() {
-      $('.loader-wrapper').slideDown(1500, function () {
+      $('.loader-wrapper').fadeOut(700, function () {
         // Fade out complete. Remove the loading div
         $('.loader-wrapper').remove();
         console.log('loader removed');
