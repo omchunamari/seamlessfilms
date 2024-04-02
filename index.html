@@ -50,7 +50,7 @@
     <!-- video  -->
 
     <div class="landing">
-        <video width="100%" height="100%" autoplay loop muted>
+        <video width="100%" autoplay loop muted>
             <source src="/rolling shot audi.mp4" type="video/mp4">
       </video>
     </div>
@@ -59,16 +59,40 @@
     <!-- What is ppf?-->
     <div class="splitdiv">
         <div class="left">
-            <img src="" alt="Photo">
+            <img src="/dabba.png" alt="Photo">
         </div>
         <div class="slanteddivider">
         </div>
         <div class="right">
             <div class="content">
-                <h2>Our Content Blaaaaaaaaaa</h2>
+                <h2 style="color: white;">Paint protection film (PPF) is a thermoplastic polyurethane (TPU) film that is used to coat the painted surfaces of new or old cars to help shield the paint from small abrasions, stone chips, and bug splatters.</h2>
             </div>
         </div>
     </div>
+    <!-- Scrolller!!!!!!!!-->
+    <!-- <div class="scroller" id="scrollableSection">
+        <div class="scrollleritem">
+            <h1 style="color: black;">Seamless Vision</h1>
+            Preserving Automotive Excellence with Advanced Paint Protection Solutions.
+        </div>
+        <div class="scrolleritem">
+            <h1 style="color: black;">Customer-Centric Approach</h1>
+            Putting customers at the heart of everything we do, delivering seamless experiences tailored to their needs.
+        </div>
+        <div class="scrolleritem">
+            <h1 style="color: black;">Diverse Range of PPF
+            </h1>Offering a diverse range of Paint Protection Films, ensuring every vehicle receives tailored and lasting protection.
+        </div>
+    </div> -->
+
+    <div class="benefits">
+        <h1>Benefits of PPF</h1>
+    </div>
+
+    <footer>
+        <p>© 2023 Seamless Films. All rights reserved.</p>
+    </footer>
+
 
 
 
@@ -102,6 +126,15 @@
         //   let element = document.getElementById("menu");
         //   element.classList.toggle("display-menu");
         // }
+
+
+        // horizontal scrolling 
+
+        var scrollableSection = document.getElementById('scrollableSection');
+        scrollableSection.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            scrollableSection.scrollLeft += e.deltaY;
+        });
     </script>
 </body>
 
