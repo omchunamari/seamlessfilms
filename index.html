@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 <body>
     <div class="loader-wrapper">
         <div class="loader">
-          <video class="loader" autoplay loop muted>
+            <video class="loader" autoplay loop muted>
             <source src="logo video 1.mp4">
             Your browser does not support the video tag.
           </video>
@@ -24,7 +25,7 @@
         </div>
         <div>
             <ul class="nav-items">
-                
+
                 <a href="#company">
                     <li class="nav-item">Company</li>
                 </a>
@@ -34,68 +35,74 @@
                 <a href="#contact">
                     <li class="nav-item">Contact us</li>
                 </a>
-                
+
                 <a href="#test">
                     <li class="nav-item">Testimonials</li>
                 </a>
                 <a href="#blog">
-                    <li class="nav-item">Blog</li> 
+                    <li class="nav-item">Blog</li>
                 </a>
             </ul>
         </div>
     </nav>
 
+
+    <!-- video  -->
+
     <div class="landing">
-        <!-- video  -->
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="/rolling shot audi.mp4" type="video/mp4">
+      </video>
     </div>
-    <!-- What is ppf?--> 
+
+    </div>
+    <!-- What is ppf?-->
     <div class="splitdiv">
-      <div class="left">
-        <img src="" alt="Photo">
-      </div>
-      <div class="slanteddivider">
-      </div>
+        <div class="left">
+            <img src="" alt="Photo">
+        </div>
+        <div class="slanteddivider">
+        </div>
         <div class="right">
-          <div class="content">
-            <h2>Our Content Blaaaaaaaaaa</h2>
-          </div>
+            <div class="content">
+                <h2>Our Content Blaaaaaaaaaa</h2>
+            </div>
         </div>
     </div>
 
-    
 
 
 
-    
+
+
 
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    
-      $.get('loader.html', function (data) {
-      $('#loading').replaceWith(data);
-    });
+    <script>
+        $.get('loader.html', function(data) {
+            $('#loading').replaceWith(data);
+        });
 
 
-    $(window).on('load', function () {
-      setTimeout(removeLoader, 1000); // Wait for page load PLUS two seconds
-    });
+        $(window).on('load', function() {
+            setTimeout(removeLoader, 1000); // Wait for page load PLUS two seconds
+        });
 
-    function removeLoader() {
-      $('.loader-wrapper').fadeOut(700, function () {
-        // Fade out complete. Remove the loading div
-        $('.loader-wrapper').remove();
-        console.log('loader removed');
-      });
-    }
+        function removeLoader() {
+            $('.loader-wrapper').fadeOut(700, function() {
+                // Fade out complete. Remove the loading div
+                $('.loader-wrapper').remove();
+                console.log('loader removed');
+            });
+        }
 
-//     function displayMenu() {
-//   let element = document.getElementById("menu");
-//   element.classList.toggle("display-menu");
-// }
-    
-  </script>
+        //     function displayMenu() {
+        //   let element = document.getElementById("menu");
+        //   element.classList.toggle("display-menu");
+        // }
+    </script>
 </body>
+
 </html>
