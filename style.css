@@ -89,6 +89,22 @@ nav {
     width: 100%;
     background-color: rgb(0, 0, 0);
     height: min-content;
+    opacity: 0.4;
+    position: relative;
+}
+
+.opener{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+
+.opener a{
+    text-decoration: none;
+    color: white;
+    font-size: 80px;
 }
 
 .splitdiv {
@@ -168,5 +184,144 @@ nav {
 }
 
 footer {
+    height: 150px;
+    background-color: #202020;
+}
+benefitmain{
+    position: relative;
+    
+}
+
+
+/* slider  */
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
     height: 50vh;
+    background: url("background\ for\ text.png") no-repeat;
+    background-size: cover;
+}
+
+.mySlides {
+    display: none;
+    color: white;
+}
+
+.mySlides h1{
+    bottom: 50%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.benefitmain {
+    background-image: url("background\ for\ text\ 3.png") ;
+    align-content: center;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.benefitinside {
+    color: white;
+    margin: 50px;
+    font-size: 15 px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 5px;
+    border-color: white;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefit{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+footer{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content{
+    margin-bottom: 10px;
+}
+.social-icons a{
+    display: inline-block;
+    margin: 0 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.map{
+    opacity: 0.8;
 }

@@ -7,6 +7,7 @@
     <title>Seamless Films</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f4f79a9cc1.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -53,11 +54,16 @@
         <video width="100%" autoplay loop muted>
             <source src="/rolling shot audi.mp4" type="video/mp4">
       </video>
+      <div class="opener">
+        <a href="#company">
+            <img src="/logo.png" alt="">
+        </a>
+      </div>
     </div>
 
-    </div>
+
     <!-- What is ppf?-->
-    <div class="splitdiv">
+    <div class="splitdiv" id="company">
         <div class="left">
             <img src="/dabba.png" alt="Photo">
         </div>
@@ -69,28 +75,55 @@
             </div>
         </div>
     </div>
-    <!-- Scrolller!!!!!!!!-->
-    <!-- <div class="scroller" id="scrollableSection">
-        <div class="scrollleritem">
-            <h1 style="color: black;">Seamless Vision</h1>
-            Preserving Automotive Excellence with Advanced Paint Protection Solutions.
-        </div>
-        <div class="scrolleritem">
-            <h1 style="color: black;">Customer-Centric Approach</h1>
-            Putting customers at the heart of everything we do, delivering seamless experiences tailored to their needs.
-        </div>
-        <div class="scrolleritem">
-            <h1 style="color: black;">Diverse Range of PPF
-            </h1>Offering a diverse range of Paint Protection Films, ensuring every vehicle receives tailored and lasting protection.
-        </div>
-    </div> -->
 
-    <div class="benefits">
-        <h1>Benefits of PPF</h1>
+    <!-- Scrolller!!!!!!!!-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <h1>Seamless Vision</h1>
+            <div class="text">Preserving Automotive Excellence with Advanced Paint Protection Solutions.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <h1>Customer-Centric Approach</h1>
+            <div class="text">Putting customers at the heart of everything we do, delivering seamless experiences tailored to their needs.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <h1>Diverse Range of PPF</h1>
+            <div class="text">Offering a diverse range of Paint Protection Films, ensuring every vehicle receives tailored and lasting protection.</div>
+        </div>
     </div>
-    
+    <div class="benefitmain">
+        <h1 align="center">Benefits OF Paint Protection Films</h1>
+        <div class="benefit">
+                
+
+        <div class="benefitinside">
+            <h1 style="text-align: center;">Scratch Resistance</h1>PPF provides a durable barrier against scratches, chips, and abrasions caused by road debris, rocks, gravel, and other environmental hazards. It helps preserve the original paint finish of the vehicle. </div>
+        <div class="benefitinside">
+            <h1 style="text-align: center;"> Invisible Protection</h1>PPF is transparent and virtually invisible when properly installed, maintaining the original aesthetics of the vehicle without altering its appearance. It allows the beauty of the paint finish to shine through while
+            providing essential protection.</div>
+        <div class="benefitinside">
+            <h1 style="text-align: center;">Stain Resistance</h1> PPF is resistant to stains from bird droppings, tree sap, insects, and other contaminants. Its smooth surface makes it easier to clean, reducing the need for frequent detailing and preserving the vehicle's appearance</div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1714.418384137707!2d73.06885493133585!3d19.032457192480308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c26b38db8473%3A0xbe6bb06dff6b6b73!2sDetailing%20Dons%20(Ceramic%20coating%20%26%20Paint%20Protection%20Film)!5e0!3m2!1sen!2sin!4v1712137856477!5m2!1sen!2sin" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+        <!--Products Description-->
+    </div>
     <footer>
-        <p>© 2023 Seamless Films. All rights reserved.</p>
+        <div class="footer-content">
+            <p>Contact us: example@email.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>© 2023 Seamless Films. All rights reserved.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 
 
@@ -102,7 +135,7 @@
 
 
 
-
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $.get('loader.html', function(data) {
@@ -130,11 +163,14 @@
 
         // horizontal scrolling 
 
-        var scrollableSection = document.getElementById('scrollableSection');
-        scrollableSection.addEventListener('wheel', function(e) {
-            e.preventDefault();
-            scrollableSection.scrollLeft += e.deltaY;
-        });
+        // var scrollableSection = document.getElementById('scrollableSection');
+        // scrollableSection.addEventListener('wheel', function(e) {
+        //     e.preventDefault();
+        //     scrollableSection.scrollLeft += e.deltaY;
+        // });
+
+
+        
     </script>
 </body>
 
