@@ -63,6 +63,21 @@ nav {
     transition-duration: 0.1s;
 }
 
+.nav-item select option{
+    font-weight: 800;
+    font-size: 18px;
+    background-color: #dedede;
+    color: rgb(37, 37, 37);
+}
+
+.nav-item select{
+    font-weight: 800;
+    font-size: 18px;
+    width: 125px;
+    height: 30px;
+    
+}
+
 .nav-item:hover {
     transition: 0.5s;
     transform: scale(1.05);
@@ -420,4 +435,35 @@ footer{
 
 .map{
     opacity: 0.8;
+}
+.product {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border: groove 5px;
+}
+
+.productinside {
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.textproduct {
+    width: 550px;
+    height: 100px;
+    color: white;
+    margin-top: 130px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.imageinside {
+    transform: rotate(180deg);
 }

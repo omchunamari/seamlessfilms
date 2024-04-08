@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f4f79a9cc1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav id="navigation">
         <div class="logo">
-            <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
+            <a href="index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
             <ul class="nav-items">
@@ -19,12 +21,14 @@
                 <a href="#company">
                     <li class="nav-item">Company</li>
                 </a>
-                <a href="#products">
-                    <li class="nav-item">Products</li>
-                </a>
-                <a href="#contact">
-                    <li class="nav-item">Contact us</li>
-                </a>
+
+                <li class="nav-item">
+                    <select name="products" id="products">
+                        <option value="">Products</option>
+                        <option value="clearppf">Clear PPF</option>
+                        <option value="matteppf">Matte PPF</option>
+                    </select>
+                </li>
 
                 <a href="#test">
                     <li class="nav-item">Testimonials</li>
@@ -32,9 +36,16 @@
                 <a href="#blog">
                     <li class="nav-item">Blog</li>
                 </a>
+
+                <a href="#contact">
+                    <li class="nav-item">Contact us</li>
+                </a>
             </ul>
         </div>
     </nav>
+    <div>
+
+    </div>
 
 
 
@@ -43,7 +54,9 @@
             <img src="/logo.png" alt="">
             <span>Paint Protection Films</span>
             <br>
-            <p>Seamless Films is a leading provider of paint protection films. We offer a diverse range of products to meet the diverse needs of our customers. Our team of experts has years of experience in the field. We would like to welcome you to Seamless Films.</p>
+            <p>Seamless Films is a leading provider of paint protection films. We offer a diverse range of products to
+                meet the diverse needs of our customers. Our team of experts has years of experience in the field. We
+                would like to welcome you to Seamless Films.</p>
         </div>
         <div class="nav-links">
             <ul>
@@ -54,9 +67,10 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-        
+
         <div class="address">
-            <p>Address: Shop no 16, Kharghar Station Road Vasundhara chs, 17, Sector 8, Kharghar, Navi Mumbai, Maharashtra 410210</p>
+            <p>Address: Shop no 16, Kharghar Station Road Vasundhara chs, 17, Sector 8, Kharghar, Navi Mumbai,
+                Maharashtra 410210</p>
             <p>Phone: <a href="tel:+919920539360">9920539360</a></p>
             <p>Email: <a href="mailto:info@seamlessfilms.com">info@seamlessfilms.com</a></p>
             <div class="social-icons">
@@ -67,24 +81,34 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(window).on('scroll', function(){
+        $(window).on('scroll', function () {
 
-if($(this).scrollTop() > 300)
- {
-     $('#navigation').css('background-color', 'black');
-     $('#navigation').css('transition', 'all 2s');
- }
-else
- {
-     $('#navigation').css('background-color', 'transparent');
- }
-});
+            if ($(this).scrollTop() > 300) {
+                $('#navigation').css('background-color', 'black');
+                $('#navigation').css('transition', 'all 2s');
+            }
+            else {
+                $('#navigation').css('background-color', 'transparent');
+            }
+        });
 
 
-</script>
+        $('#products').change(function () {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            }
+        });
+
+
+
+    </script>
 </body>
+
 </html>
