@@ -440,30 +440,63 @@ footer{
     background-color: black;
     display: flex;
     flex-direction: row;
-    border: groove 5px;
+    border: solid white 10px;
+    justify-content: space-between;
 }
 
 .productinside {
-    width: 800px;
+    width: 700px;
     height: 400px;
-    margin: 10px;
-    padding: 10px;
+
 }
 
 .textproduct {
-    width: 550px;
-    height: 100px;
+    height: 400px;
+    width: 600px;
     color: white;
-    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: larger;
-    text-align: center;
+    text-align: left;
     margin-right: 15px;
+}
+
+.textproduct a{
+    text-decoration: none;
+}
+.textproduct a button{
+    height: 35px;
+    width: 125px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid 2px white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.textproduct a button:hover{
+    background-color: white;
+    color: black;
+    
 }
 
 .imageinside {
     transform: rotate(180deg);
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: #000;
 }

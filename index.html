@@ -21,7 +21,7 @@
         </div>
     </div>
     <nav id="navigation">
-        <div class="logo">
+        <div class="logo" id="logo">
             <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
@@ -106,33 +106,33 @@
     </div>
 
     <!-- product redirection  -->
-     <!--Clear PPF-->
-     <div class="product">
-        <div class="textproduct">
-            <h2>Clear Paint Protection Film</h2>Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car from scratches, chips, and environmental damage, preserving its pristine appearance for years to come.
+    <!--Clear PPF-->
+    <div class="product">
+        <div class="textproduct" style="padding-left: 100px;">
+            <h2>Clear Paint Protection Film</h2><br>
+            <p>Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car
+                from scratches, chips, and environmental damage, preserving its pristine appearance for years to come.
+            </p><br>
+            <a href="clearppf.html"><button>Read more</button></a>
         </div>
-        <div class="productinside"><img src="/clear with arrow.png" width="700px" height="400px" alt="not possible"></div>
+        <div class="productinside"><img src="/ppf images/clear with arrow.png" width="700px" height="400px"
+                alt="not possible">
+        </div>
 
     </div>
     <!--Matte PPF-->
     <div class="product">
-        <div class="productinside"><img src="/matte ppf with arroww.png" width="700px" height="400px" alt="not possible"></div>
-        <div class="textproduct">
-            <h2>Matte Paint Protection Film</h2><br>Preserve your matte masterpiece with our specialized Matte Paint Protection Film, safeguarding your vehicle's unique finish against scratches and maintaining its distinctive look.</div>
+        <div class="productinside"><img src="/ppf images/matte ppf with arroww.png" width="700px" height="400px"
+                alt="not possible"></div>
+        <div class="textproduct" style="padding-right: 100px;">
+            <h2>Matte Paint Protection Film</h2><br>
+            <p>Preserve your matte masterpiece with our specialized Matte Paint Protection Film, safeguarding your
+                vehicle's unique finish against scratches and maintaining its distinctive look.</p><br>
+            <a href="matteppf.html"><button>Read more</button></a>
+        </div>
 
     </div>
 
-
-    
-    
-
-
-
-
-
-
-
-    <!-- paste your code here -->
 
 
 
@@ -200,9 +200,10 @@
             </div>
         </div>
     </footer>
-    <footer>
+
+    <div class="copyright">
         <p>Copyright &copy; 2024 Seamless Films. All Rights Reserved. </p>
-    </footer>
+    </div>
 
 
     <script src="script.js"></script>
@@ -244,21 +245,23 @@
             if ($(this).scrollTop() > 300) {
                 $('#navigation').css('background-color', 'black');
                 $('#navigation').css('transition', 'all 2s');
+                $('#logo').css('display', 'inline-block');
             }
             else {
                 $('#navigation').css('background-color', 'transparent');
+                $('#logo').css('display', 'none');
             }
         });
 
 
-        $('#products').change(function() {
-    var value = $(this).val();
-    if (value === 'clearppf') {
-        window.location.href = 'clearppf.html';
-    } else if (value === 'matteppf') {
-        window.location.href = 'matteppf.html';
-    }
-});
+        $('#products').change(function () {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            }
+        });
 
 
 
