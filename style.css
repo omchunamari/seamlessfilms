@@ -27,6 +27,7 @@ nav {
 }
 
 
+
 #products {
     background: transparent;
     border: none;
@@ -466,6 +467,7 @@ footer{
 }
 
 .textproduct a{
+ 
     text-decoration: none;
 }
 .textproduct a button{
@@ -499,4 +501,14 @@ footer{
     width: 100vw;
     padding: 20px;
     background-color: #000;
+}
+.productoutside{
+    display: flex;
+    flex-direction: row;
+    border: solid 5px;  
+}
+.productinner{
+    width: 800px;
+    height: 800px;
+
 }

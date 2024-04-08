@@ -21,7 +21,7 @@
         </div>
     </div>
     <nav id="navigation">
-        <div class="logo" id="logo">
+        <div class="logo">
             <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
@@ -107,7 +107,7 @@
 
     <!-- product redirection  -->
     <!--Clear PPF-->
-    <div class="product">
+    <div class="product" style="border-bottom: none;">
         <div class="textproduct" style="padding-left: 100px;">
             <h2>Clear Paint Protection Film</h2><br>
             <p>Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car
@@ -245,11 +245,11 @@
             if ($(this).scrollTop() > 300) {
                 $('#navigation').css('background-color', 'black');
                 $('#navigation').css('transition', 'all 2s');
-                $('#logo').css('display', 'inline-block');
+
             }
             else {
                 $('#navigation').css('background-color', 'transparent');
-                $('#logo').css('display', 'none');
+                $('#navigation').css('transition', 'all 2s');
             }
         });
 
