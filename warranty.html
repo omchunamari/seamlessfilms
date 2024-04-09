@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seamless | Clear PPF</title>
+    <title>Seamless | Warranty</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f4f79a9cc1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <nav id="navigation">
         <div class="logo">
-            <a href="index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
+            <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
             <ul class="nav-items">
@@ -31,10 +32,10 @@
                 </li>
 
                 <a href="#test">
-                    <li class="nav-item">Testimonials</li>
-                </a>
-                <a href="#blog">
                     <li class="nav-item">Blog</li>
+                </a>
+                <a href="#top">
+                    <li class="nav-item">Warranty</li>
                 </a>
 
                 <a href="#contact">
@@ -43,18 +44,19 @@
             </ul>
         </div>
     </nav>
-    <!--Clear Description-->
-    <div>
-        <img src="/ppf images/clear.jpg" alt="Failed">
-    </div>
-    <div class="productoutside">
-        <div class="productinner"><img src="/ppf images/Untitled design (4).png" alt=""></div>
-        <div class="productinner productcontent">Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car
-            from scratches, chips, and environmental damage, preserving its pristine appearance for years to come.</div>
-        <div class="productinner"><img src="/ppf images/Untitled design (5).png" alt=""></div>
-    </div>
-    <!--Clear Features-->
 
+    <!--Warranty Form-->
+    <form action="" id="MyForm" style="margin-top: 100px;">
+        <table>
+            <tr><h3>Customer Details</h3></tr>
+            <tr><td><input type="text" name="fname" id="fname" placeholder="First Name"></td></tr>
+            <tr><td><input type="text" name="lname" id="lname" placeholder="Last Name"></td></tr>
+        </table>
+    </form>
+
+    
+
+    
     <footer>
         <div class="companyinfo">
             <img src="/logo.png" alt="">
@@ -87,21 +89,22 @@
             </div>
         </div>
     </footer>
+
     <div class="copyright">
         <p>Copyright &copy; 2024 Seamless Films. All Rights Reserved. </p>
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(window).on('scroll', function () {
 
             if ($(this).scrollTop() > 300) {
                 $('#navigation').css('background-color', 'black');
                 $('#navigation').css('transition', 'all 2s');
+
             }
             else {
                 $('#navigation').css('background-color', 'transparent');
+                $('#navigation').css('transition', 'all 2s');
             }
         });
 
@@ -114,9 +117,6 @@
                 window.location.href = 'matteppf.html';
             }
         });
-
-
-
     </script>
 </body>
 
