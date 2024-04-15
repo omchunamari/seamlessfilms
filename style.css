@@ -523,3 +523,18 @@ footer{
 .hwarranty{
     text-align: center;
 }
+/* Warranty Page*/
+.line-input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline:none;
+    color: white;
+}
+
+.clearppf5-table{
+    margin-top: 200px;
+    margin-left: 200px;
+    
+
+}
