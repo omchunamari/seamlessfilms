@@ -16,7 +16,8 @@ const sendEmail = async (formData, subject) => {
   try {
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'shrushti.samant@gmail.com,chunamariom@gmail.com', // Replace with recipient emails
+      to: `
+        ${subject === 'Email Form Submission' ? 'shrushti.samant@gmail.com' : 'chunamariom@gmail.com'}`, // Replace with recipient emails
       subject: subject, // Set subject based on form
       text: `
         ${subject === 'Email Form Submission' ? `
@@ -117,4 +118,4 @@ app.post('/claim',  async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log('Server listening on port http://localhost:3000'));
+app.listen(process.env.PORT, () => console.log(`Server listening on port http://localhost:${process.env.PORT}`));

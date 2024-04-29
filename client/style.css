@@ -183,6 +183,19 @@ nav {
     height: auto;
     display: block;
     background-color: white;
+    animation: hover 2s infinite ease;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 .right {
