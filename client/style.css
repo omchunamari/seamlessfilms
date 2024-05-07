@@ -821,7 +821,47 @@ footer{
     color: rgb(0, 0, 0);
 }
 
+.search-btn{
+    position: fixed;
+    top: 125px;
+    right: 50px;
+    width: auto;
+}
+.search-alignment{
+    display: flex;
+    align-items: center;
+}
 
+.search-alignment i{
+    font-size: 20px;
+    color: black;
+}
+
+.search-alignment input{
+    padding: 10px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    width: 175px;
+    outline: none;
+}
+
+.search-alignment input:focus{
+    outline: none;
+    border-color: #fff;
+}
+
+.search-alignment button{
+    padding: 10px;
+    font-size: 20px;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.459);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
 
 
 
