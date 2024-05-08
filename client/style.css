@@ -69,6 +69,7 @@ nav {
     font-size: 18px;
     background-color: #dedede;
     color: rgb(37, 37, 37);
+    padding: 10px;
 }
 
 .nav-item select{
@@ -78,6 +79,8 @@ nav {
     height: 30px;
     
 }
+
+
 
 .nav-item:hover {
     transition: 0.5s;
