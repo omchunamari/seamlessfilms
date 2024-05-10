@@ -12,7 +12,6 @@ body {
 }
 
 nav {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +24,6 @@ nav {
     top: 0;
     z-index: 1;
 }
-
-
 
 #products {
     background: transparent;
@@ -64,19 +61,18 @@ nav {
     transition-duration: 0.1s;
 }
 
-.nav-item select option{
+.nav-item select option {
     font-weight: 800;
     font-size: 18px;
     background-color: #dedede;
     color: rgb(37, 37, 37);
 }
 
-.nav-item select{
+.nav-item select {
     font-weight: 800;
     font-size: 18px;
     width: 125px;
     height: 30px;
-    
 }
 
 .nav-item:hover {
@@ -84,9 +80,6 @@ nav {
     transform: scale(1.05);
     color: rgb(186, 186, 186);
 }
-
-
-
 
 .loader-wrapper {
     width: 100vw;
@@ -121,24 +114,24 @@ nav {
     position: relative;
 }
 
-.opener{
+.opener {
     width: fit-content;
     height: fit-content;
     position: absolute;
     top: 35%;
     left: 30%;
-    animation: Zoomoutin 2s cubic-bezier(0.96,-0.29, 1, 0.99); 
+    animation: Zoomoutin 2s cubic-bezier(0.96, -0.29, 1, 0.99);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.opener a{
+.opener a {
     text-decoration: none;
     color: white;
     font-size: 80px;
 }
 
-.opener h1{
+.opener h1 {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -247,15 +240,13 @@ nav {
     height: 50vh;
 }
 
-
-
-.benefitmain{
+.benefitmain {
     position: relative;
-    
 }
 
 
 /* slider  */
+
 * {
     box-sizing: border-box
 }
@@ -273,7 +264,7 @@ nav {
     color: white;
 }
 
-.mySlides h1{
+.mySlides h1 {
     bottom: 50%;
     position: absolute;
     width: 100%;
@@ -326,13 +317,13 @@ nav {
     from {
         opacity: 0.2;
     }
-
     to {
         opacity: 1
     }
 }
+
 .benefitmain {
-    background-image: url("background\ for\ text\ 3.png") ;
+    background-image: url("background\ for\ text\ 3.png");
     align-content: center;
     background-color: black;
     padding: 20px;
@@ -361,12 +352,13 @@ nav {
     gap: 10px;
 }
 
-.benefit{
+.benefit {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
-footer{
+
+footer {
     color: white;
     padding: 50px 100px;
     text-align: center;
@@ -378,12 +370,13 @@ footer{
     gap: 100px;
 }
 
-.social-icons a{
+.social-icons a {
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     gap: 30px;
     flex-direction: row;
@@ -392,7 +385,7 @@ footer{
     width: max-content;
 }
 
-.companyinfo{
+.companyinfo {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -402,11 +395,12 @@ footer{
     flex-basis: 30%;
     font-size: 18px;
 }
-.companyinfo img{
+
+.companyinfo img {
     width: 175px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -416,18 +410,17 @@ footer{
     width: max-content;
 }
 
-.nav-links ul li{
-    list-style-type:disc;
+.nav-links ul li {
+    list-style-type: disc;
     font-size: 20px;
 }
 
-.nav-links ul li a{ 
+.nav-links ul li a {
     text-decoration: none;
     color: white;
-
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -436,20 +429,20 @@ footer{
     flex-basis: 30%;
 }
 
-.address p{
+.address p {
     font-size: 18px;
     text-align: justify;
 }
-.address p a{
+
+.address p a {
     text-decoration: none;
     color: white;
 }
 
-
-
-.map{
+.map {
     opacity: 0.8;
 }
+
 .product {
     background-color: black;
     display: flex;
@@ -461,7 +454,6 @@ footer{
 .productinside {
     width: 700px;
     height: 400px;
-
 }
 
 .textproduct {
@@ -479,11 +471,11 @@ footer{
     margin-right: 15px;
 }
 
-.textproduct a{
- 
+.textproduct a {
     text-decoration: none;
 }
-.textproduct a button{
+
+.textproduct a button {
     height: 35px;
     width: 125px;
     background-color: rgb(0, 0, 0);
@@ -496,17 +488,16 @@ footer{
     transition-duration: 0.3s;
 }
 
-.textproduct a button:hover{
+.textproduct a button:hover {
     background-color: white;
     color: black;
-    
 }
 
 .imageinside {
     transform: rotate(180deg);
 }
 
-.copyright{
+.copyright {
     color: white;
     display: flex;
     justify-content: center;
@@ -515,33 +506,40 @@ footer{
     padding: 20px;
     background-color: #000;
 }
-.productoutside{
+
+.productoutside {
     display: flex;
     flex-direction: row;
-    border: solid 5px;  
+    border: solid 5px;
 }
-.productinner{
+
+.productinner {
     width: 800px;
     height: 350px;
 }
-.productcontent{
+
+.productcontent {
     text-align: center;
     margin-top: 250px;
     justify-content: center;
     align-items: center;
 }
 
+
 /* contact  */
-.contact{
+
+.contact {
     display: flex;
     margin-top: 70px;
     height: 80vh;
     align-items: center;
 }
-.contact h1{
+
+.contact h1 {
     font-size: 54px;
 }
-.contact1{
+
+.contact1 {
     flex-basis: 50%;
     padding: 50px;
     flex-direction: column;
@@ -549,26 +547,27 @@ footer{
     display: flex;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.514);
 }
-.card p a{
+
+.card p a {
     color: white;
     text-decoration: none;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
 
-.contactform{
+.contactform {
     flex-basis: 100%;
     padding: 100px;
     width: 100%;
@@ -579,19 +578,21 @@ footer{
     align-items: center;
 }
 
-.contactform form{
+.contactform form {
     display: flex;
     flex-direction: column;
 }
-.contactform form table{
+
+.contactform form table {
     width: 75%;
 }
-.contactform form table td{
+
+.contactform form table td {
     padding: 10px 20px;
     margin: 0 25px;
 }
 
-.contactform form table input{
+.contactform form table input {
     width: 50vw;
     padding: 5px 10px;
     background: transparent;
@@ -603,12 +604,12 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.contactform form table input:focus{
+.contactform form table input:focus {
     outline: none;
     border-bottom: 2px solid white;
 }
 
-.contactform form input[type="submit"]{
+.contactform form input[type="submit"] {
     width: 200px;
     padding: 10px 20px;
     margin: 20px;
@@ -622,13 +623,15 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.contactform form input[type="submit"]:hover{
+.contactform form input[type="submit"]:hover {
     background: white;
     color: black;
 }
 
+
 /* thankyou  */
-.thankyou{
+
+.thankyou {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -639,16 +642,18 @@ footer{
 }
 
 @keyframes fadein {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
 
+
 /* warranty  */
-.warrantyform{
+
+.warrantyform {
     display: flex;
     height: 160vh;
     justify-content: center;
@@ -658,18 +663,20 @@ footer{
     z-index: -1;
 }
 
-.warrantyform form{
+.warrantyform form {
     width: 80vw;
 }
-.warrantyform form table{
+
+.warrantyform form table {
     width: 100%;
 }
-.warrantyform form table td{
+
+.warrantyform form table td {
     padding: 10px 20px;
     margin: 0 25px;
 }
 
-.warrantyform form table input[type = "text"]{
+.warrantyform form table input[type="text"] {
     width: 100%;
     padding: 5px 10px;
     background: transparent;
@@ -682,12 +689,12 @@ footer{
     outline: none;
 }
 
-.warrantyform form table input[type = "text"]:focus{
+.warrantyform form table input[type="text"]:focus {
     outline: none;
     border-bottom: 2px solid white;
 }
 
-.warrantyform form input[type="date"]{
+.warrantyform form input[type="date"] {
     width: 25%;
     padding: 5px 10px;
     background: transparent;
@@ -698,22 +705,22 @@ footer{
     font-size: 16px;
     transition: all 0.5s ease-in-out;
 }
-.warrantyform form input[type="date"]:hover{
+
+.warrantyform form input[type="date"]:hover {
     outline: none;
     background-color: white;
     color: #000;
     border-radius: 15px;
 }
 
-.warrantyform form input[type="radio"]{
+.warrantyform form input[type="radio"] {
     margin: 10px 10px 0px 0;
     color: white;
     font-size: 16px;
     transition: all 0.5s ease-in-out;
-
 }
 
-.warrantyform form button[type="submit"]{
+.warrantyform form button[type="submit"] {
     padding: 10px 20px;
     margin: 20px 0;
     align-self: flex-end;
@@ -726,12 +733,12 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.warrantyform form button[type="submit"]:hover{
+.warrantyform form button[type="submit"]:hover {
     background: white;
     color: black;
 }
 
-.warrantyform form input[type="file"]{
+.warrantyform form input[type="file"] {
     margin: 10px 10px 0px 0;
     color: white;
     font-size: 16px;
@@ -741,21 +748,18 @@ footer{
 }
 
 
-
-
 /* blog  */
-.par{
-  margin: auto;
-  
-  
+
+.par {
+    margin: auto;
 }
-.blog{
+
+.blog {
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 20px;
     padding: auto;
     justify-content: center;
-    
     width: 80%;
     height: 350px;
     border: 5px solid white;
@@ -765,25 +769,111 @@ footer{
     color: white;
     font-size: 24px;
     transition: all 0.5s ease-in-out;
-
-    
-
 }
 
-.post1{
+.post1 {
     padding: 10px;
     overflow: auto;
     margin-top: 13px;
 }
 
-.img-blog1{
+.img-blog1 {
     float: left;
     margin-right: 10px;
-   
 }
 
 
+/* Product clear and matte page*/
 
+.clearcontainer {
+    height: 500px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.cleardiv {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-bottom: 10px;
+    width: calc(50% - 10px);
+}
 
+.prodbody {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 
+.maincontent {
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: #333;
+    height: 700px;
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: #222;
+    color: #fff;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.table {
+    background-color: #222;
+    color: #fff;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.prodtable {
+    width: 600px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+th {
+    background-color: #111;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+.highlight {
+    background-color: #555;
+}
+
+.withincontent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.imgclear {
+    height: 500px;
+    width: 1600px;
+}
+
+.text {
+    position: relative;
+}
