@@ -747,11 +747,7 @@ footer{
 
 
 /* blog  */
-.par{
-  margin: auto;
-  
-  
-}
+
 .blog{
     display: flex;
     justify-content: center;
@@ -866,6 +862,63 @@ footer{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+    .opener{
+        left: 38%;
+    }
+    .opener img{
+        height: 50px;
+    }
+    .content h2{
+        font-size: 16px;
+    }
+    .textproduct h2{
+        font-size: 22px;
+    }
+    .textproduct p{
+        font-size: 15px;
+    }
+    .benefitinside h1{
+        font-size: 22px;
+    }
+    .benefitinside{
+        font-size: 15px;
+    }
+    .benefit{
+        gap: 25px;
+    }
+    .footer{
+        gap: 50px;
+    }
+    .address p{
+        font-size: 16px;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+    .companyinfo p{
+        font-size: 16px;
+    }
+    .companyinfo span{
+        font-size: 16px;
+    }
+    .blog div{
+        font-size: 14px;
+    }
+    .post1 img{
+        height: 200px;
+    }
+    .blog{
+        height: 250px;
+    }
+    .par{
+        height: 150vh;
+    }
+    .search-btn{
+        top: 70px;
+        right: 20px;
+    }
+}
 
 
 
