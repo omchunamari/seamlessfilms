@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Films</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+          <video class="loader" autoplay loop muted>
+            <source src="logo video 1.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="#top"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <a href="#Home">
+                    <li class="nav-item"> Home </li>
+                </a>
+                <a href="#company">
+                    <li class="nav-item">Company</li>
+                </a>
+                <a href="#products">
+                    <li class="nav-item">Products</li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-item">Contact us</li>
+                </a>
+                <a href="#Book">
+                    <li class="nav-item">Book an Appointment</li>
+                </a>
+                <a href="#test">
+                    <li class="nav-item">Testimonials</li>
+                </a>
+                <a href="#blog">
+                    <li class="nav-item">Blog</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <img src="./virtus.jpg" class="virtus" alt="">
+    <!--
+    <section id="Home" ></section>
+    <section id="company" class="sec"></section>
+    <section id="products" class="sec"></section>
+    <section id="contact" class="sec"></section>
+    <section id="Book" class="sec"></section>
+    <section id="test" class="sec"></section>
+    <section id="blog" class="sec"></section>  -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    
+      $.get('loader.html', function (data) {
+      $('#loading').replaceWith(data);
+    });
+
+
+    $(window).on('load', function () {
+      setTimeout(removeLoader, 1200); // Wait for page load PLUS two seconds
+    });
+
+    function removeLoader() {
+      $('.loader-wrapper').slideDown(1500, function () {
+        // Fade out complete. Remove the loading div
+        $('.loader-wrapper').remove();
+        console.log('loader removed');
+      });
+    }
+
+//     function displayMenu() {
+//   let element = document.getElementById("menu");
+//   element.classList.toggle("display-menu");
+// }
+    
+  </script>
+</body>
+</html>

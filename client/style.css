@@ -30,7 +30,7 @@ nav {
     border: none;
     font-size: 18px;
     color: grey;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .sec {
@@ -66,14 +66,17 @@ nav {
     font-size: 18px;
     background-color: #dedede;
     color: rgb(37, 37, 37);
+    padding: 10px;
 }
 
 .nav-item select {
     font-weight: 800;
     font-size: 18px;
-    width: 125px;
+    width: 110px;
     height: 30px;
 }
+
+
 
 .nav-item:hover {
     transition: 0.5s;
@@ -749,12 +752,12 @@ footer {
 
 
 /* blog  */
-
-.par {
-    margin: auto;
+.par{
+  margin: auto;
+  
+  
 }
-
-.blog {
+.blog{
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -767,113 +770,27 @@ footer {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     transition: all 0.5s ease-in-out;
+
+    
+
 }
 
-.post1 {
+.post1{
     padding: 10px;
     overflow: auto;
     margin-top: 13px;
 }
 
-.img-blog1 {
+.img-blog1{
     float: left;
     margin-right: 10px;
+   
 }
 
 
-/* Product clear and matte page*/
 
-.clearcontainer {
-    height: 500px;
-    overflow-y: scroll;
-    border: 1px solid #ccc;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.cleardiv {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    margin-bottom: 10px;
-    width: calc(50% - 10px);
-}
 
-.prodbody {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
 
-.maincontent {
-    margin-top: 20px;
-    margin-left: 40px;
-    background-color: #333;
-    height: 700px;
-    width: 1600px;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.content {
-    background-color: #222;
-    color: #fff;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.table {
-    background-color: #222;
-    color: #fff;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.prodtable {
-    width: 600px;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th,
-td {
-    padding: 10px;
-    border: 1px solid #444;
-}
-
-th {
-    background-color: #111;
-    font-weight: bold;
-    text-align: left;
-}
-
-td {
-    text-align: left;
-}
-
-.highlight {
-    background-color: #555;
-}
-
-.withincontent {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    padding: 40px;
-}
-
-.imgclear {
-    height: 500px;
-    width: 1600px;
-}
-
-.text {
-    position: relative;
-}
