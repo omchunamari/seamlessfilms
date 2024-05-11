@@ -1001,7 +1001,7 @@ footer{
     transform: translateX(0) scale(1);
 }
 
-.prodtable {
+.prodtable, .prodtable1 {
     margin-left: 60px;
     width: 600px;
     border-collapse: collapse;
@@ -1009,18 +1009,18 @@ footer{
 }
 
 .prodtable th,
-.prodtable td {
+.prodtable td, .prodtable1 th, .prodtable1 td {
     padding: 10px;
     border-bottom: 1px solid white;
 }
 
-.prodtable th {
+.prodtable th, .prodtable1 th {
     background-color: #111;
     font-weight: bold;
     text-align: left;
 }
 
-.prodtable td {
+.prodtable td, .prodtable1 td {
     text-align: left;
 }
 
@@ -1133,18 +1133,21 @@ footer{
 
 .animate-left {
     margin-top: 150px;
-    opacity: 0;
-    animation: slideFromLeft 2s forwards;
+    animation: slideFromLeft 1.5s ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes slideFromLeft {
     0% {
-        transform: translateX(-100%);
         opacity: 0;
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(0);
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
