@@ -1136,8 +1136,10 @@ footer{
     animation: slideFromLeft 1.5s ease-in-out;
     animation-delay: 0.5s;
     animation-iteration-count: 1;
-    display: flex;
-    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    /*display: flex;
+    justify-content: center;*/
 }
 
 @keyframes slideFromLeft {
