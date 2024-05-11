@@ -1194,6 +1194,7 @@ td {
 .matte_text {
     text-align: center;
     justify-content: justify;
+    margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
     font-size: 18px;
