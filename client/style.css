@@ -1128,7 +1128,7 @@ td {
 }
 
 .animate-left {
-    margin-top: 220px;
+    margin-top: 150px;
     opacity: 0;
     animation: slideFromLeft 2s forwards;
 }
