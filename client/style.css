@@ -217,7 +217,7 @@ nav {
     z-index: 0;
 }
 
-.content {
+.content1 {
     width: 100%;
     position: relative;
     padding: 20px;
@@ -929,7 +929,8 @@ footer{
 
 .maincontent {
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: #333;
     height: 600px;
     width: 1450px;
@@ -938,6 +939,7 @@ footer{
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .content {
@@ -989,6 +991,7 @@ footer{
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
+    overflow: hidden;
     transform: translateX(100%);
     transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
 }
@@ -1005,19 +1008,19 @@ footer{
     margin-top: 20px;
 }
 
-th,
-td {
+.prodtable th,
+.prodtable td {
     padding: 10px;
     border-bottom: 1px solid white;
 }
 
-th {
+.prodtable th {
     background-color: #111;
     font-weight: bold;
     text-align: left;
 }
 
-td {
+.prodtable td {
     text-align: left;
 }
 
@@ -1032,6 +1035,7 @@ td {
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
+    overflow: hidden;
     transform: translateX(100%);
     transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
 }
