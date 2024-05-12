@@ -15,7 +15,7 @@
     <div class="loader-wrapper">
         <div class="loader">
             <video class="loader" autoplay loop muted>
-                <source src="logo video 1.mp4">
+                <source src="./logo video 1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -39,14 +39,14 @@
                     </select>
                 </li>
 
-                <a href="/blog.html">
+                <a href="blog.html">
                     <li class="nav-item">Blog</li>
                 </a>
-                <a href="/warranty.html">
+                <a href="warranty.html">
                     <li class="nav-item">Warranty</li>
                 </a>
     
-                <a href="/contact.html">
+                <a href="contact.html">
                     <li class="nav-item">Contact us</li>
                 </a>
             </ul>
@@ -58,11 +58,11 @@
 
     <div class="landing">
         <video width="100%" autoplay loop muted>
-            <source src="/rolling shot audi.mp4" type="video/mp4">
+            <source src="./rolling shot audi.mp4" type="video/mp4">
         </video>
         <div class="opener">
             <a href="#company">
-                <img src="/logo.png" alt="">
+                <img src="./logo.png" alt="">
                 <h1>Paint Protection Films</h1>
             </a>
         </div>
@@ -72,7 +72,7 @@
     <!-- What is ppf?-->
     <div class="splitdiv" id="company">
         <div class="left">
-            <img src="/dabba.png" alt="Photo">
+            <img src="./dabba.png" alt="Photo">
         </div>
         <div class="slanteddivider">
         </div>
@@ -113,22 +113,22 @@
             <p>Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car
                 from scratches, chips, and environmental damage, preserving its pristine appearance for years to come.
             </p><br>
-            <a href="/clearppf.html"><button>Read more</button></a>
+            <a href="clearppf.html"><button>Read more</button></a>
         </div>
-        <div class="productinside"><img src="/ppf images/clear with arrow.png" width="700px" height="400px"
+        <div class="productinside"><img src="./ppf images/clear with arrow.png" width="700px" height="400px"
                 alt="not possible">
         </div>
 
     </div>
     <!--Matte PPF-->
     <div class="product">
-        <div class="productinside"><img src="/ppf images/matte ppf with arroww.png" width="700px" height="400px"
+        <div class="productinside"><img src="./ppf images/matte ppf with arroww.png" width="700px" height="400px"
                 alt="not possible"></div>
         <div class="textproduct" style="padding-right: 100px;">
             <h2>Matte Paint Protection Film</h2><br>
             <p>Preserve your masterpiece with our specialized Matte Paint Protection Film, safeguarding your
                 vehicle's unique finish against scratches and maintaining its distinctive look.</p><br>
-            <a href="/matteppf.html"><button>Read more</button></a>
+            <a href="matteppf.html"><button>Read more</button></a>
         </div>
 
     </div>
@@ -170,7 +170,7 @@
     </div>
     <footer>
         <div class="companyinfo">
-            <a href="/"><img src="logo.png" alt="Seamless Films"></a>
+            <a href="/"><img src="./logo.png" alt="Seamless Films"></a>
             <span>Paint Protection Films</span>
             <br>
             <p>Seamless Films is a leading provider of paint protection films. We offer a diverse range of products to
@@ -179,10 +179,10 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="/">Company</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/warranty.html">Warranty</a></li>
-                <li><a href="/contact.html">Contact us</a></li>
+                <li><a href="index.html">Company</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
 
@@ -256,9 +256,9 @@
         $('#products').change(function () {
             var value = $(this).val();
             if (value === 'clearppf') {
-                window.location.href = '/clearppf';
+                window.location.href = 'clearppf.html';
             } else if (value === 'matteppf') {
-                window.location.href = '/matteppf';
+                window.location.href = 'matteppf.html';
             }
         });
 
