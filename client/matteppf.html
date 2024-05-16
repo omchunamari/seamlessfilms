@@ -27,6 +27,8 @@
                         <option value="">Products</option>
                         <option value="clearppf">Clear PPF</option>
                         <option value="matteppf">Matte PPF</option>
+                        <option value="precutppf">Pre Cut PPF</option>
+                        <option value="interiorppf">Interior PPF</option>
                     </select>
                 </li>
 
@@ -224,13 +226,20 @@
         });
 
 
-        $('#products').change(function() {
+        $('#products').change(function () {
             var value = $(this).val();
             if (value === 'clearppf') {
                 window.location.href = 'clearppf.html';
             } else if (value === 'matteppf') {
                 window.location.href = 'matteppf.html';
             }
+            else if (value === 'precutppf') {
+                window.location.href = 'precut.html';
+            }
+            else if (value === 'interiorppf') {
+                window.location.href = 'interior.html';
+            }
+
         });
     </script>
     <script>
