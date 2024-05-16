@@ -1127,7 +1127,7 @@ footer{
     margin: 0 auto;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     /* background-color: black; */
     font-family: "Arial White", Arial, sans-serif;
     font-size: 24px;
@@ -1372,6 +1372,9 @@ footer{
     .textproduct{
         padding: 10px;
     }
+    .animate-left{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1394,10 +1397,9 @@ footer{
     }
     .matteheadppf{
         padding: 0;
+        top: 70%;
     }
-    .animate-left{
-        font-size: 30px;
-    }
+    
     .matte_text{
         font-size: 14px;
     }
@@ -1505,8 +1507,12 @@ footer{
     .benefit{
         gap: 0;
     }
-
-    
+    .matteheadppf{
+        margin: 0;
+    }
+    .animate-left{
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1526,6 +1532,31 @@ footer{
         height: max-content;
         transform: all 0.5s ease-in-out;
         opacity: 1;
+    }
+    .opener{
+        left: 35%;
+    }
+    .opener img{
+        width: 200px;
+    }
+    .opener h1, .mySlides h1, .benefitmain h1{
+        font-size: 16px;
+    }
+    .content1 h2, .textproduct p, .textproduct h2, .textproduct a button{
+        font-size: 11px;
+    }
+    .text{
+        padding: 0;
+        font-size: 11px;
+    }
+    .textproduct a button{
+        height: 18px;
+        width: 75px;
+        font-size: 8px;
+    }
+    .textproduct{
+        gap: 5px;
+        height: auto;
     }
 }
 
