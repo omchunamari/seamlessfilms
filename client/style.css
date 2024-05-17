@@ -480,6 +480,7 @@ footer{
     font-size: larger;
     text-align: left;
     margin-right: 15px;
+    gap: 10px;
 }
 
 .textproduct a{
@@ -1126,7 +1127,7 @@ footer{
     margin: 0 auto;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     /* background-color: black; */
     font-family: "Arial White", Arial, sans-serif;
     font-size: 24px;
@@ -1236,6 +1237,50 @@ footer{
     transform: translateY(0);
 }
 
+/* mobile responsive */
+.mobile-nav{
+    display: none;
+    margin-top: 50px;
+}
+.mobile-nav ul li{
+    background-color: #222;
+    color: white;
+    padding: 2px 20px;
+    list-style: none;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+.mobile-nav ul li:hover{
+    background-color: rgb(149, 149, 149);
+    color: black;
+}
+.mobile-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.fa-times{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-nav ul{
+    height: 0;
+    overflow: hidden;
+}
+.mobile-menu .fa-times{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 20px;
+}
+
 
 
 /* media responsiven for mobile */
@@ -1278,7 +1323,7 @@ footer{
         font-size: 16px;
     }
     .matteheadppf{
-        top: 60%;
+        top: 50%;
     }
     .matte_text{
         font-size: 16px;
@@ -1305,7 +1350,7 @@ footer{
         width: 100%;
         height: 350px;
     }
-    .contactform h1, .contact1 h1{
+    .contactform h1, .contact1 h1, .text-overlay-clear h2, .text-overlay h2{
         font-size: 40px;
     }
     .contactform h2, .contact1 h2{
@@ -1323,6 +1368,12 @@ footer{
     .prodtable, .table,.prodtable1, .table1{
         margin: 0;
         width: fit-content;
+    }
+    .textproduct{
+        padding: 10px;
+    }
+    .animate-left{
+        font-size: 30px;
     }
 }
 
@@ -1346,16 +1397,166 @@ footer{
     }
     .matteheadppf{
         padding: 0;
+        top: 70%;
     }
-    .animate-left{
-        font-size: 30px;
-    }
+    
     .matte_text{
         font-size: 14px;
     }
     .content-wrapper p{
         font-size: 14px;
         text-align: justify;
+    }
+    .prodtable, .prodtable1{
+        font-size: 14px;
+    }
+    .warrantyform h2{
+        font-size: 20px;
+    }
+    .warrantyform form table input[type = "text"], .warrantyform form input[type="date"]{
+        font-size: 14px;
+    }
+    .warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+        font-size: 16px;
+        width: 200px;
+    }
+    .contact1 h1{
+        font-size: 32px;
+    }
+    .contact1 h2{
+        font-size: 16px;
+    }
+    .contactform h1{
+        font-size: 32px;
+    }
+    .contactform form table td{
+        font-size: 16px;
+    }
+    footer{
+        gap: 20px;
+    }
+    .mySlides h1{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .mySlides h1{
+        font-size: 24px;
+    }
+    .nav-item, #products, .nav-item select option, .text, .textproduct p, .copyright, .content1 h2,.blog p, .content-wrapper h4, .textproduct a button{
+        font-size: 14px;
+    }
+    .textproduct h2, .warrantyform h2{
+        font-size: 16px;
+    }
+    .companyinfo, .address{
+        flex-basis: 35%;
+    }
+    .logo{
+        width: 200px;
+    }
+    .warrantyform{
+        padding: 0 20px;
+        margin-top: 75px;
+        height: auto;
+    }
+    .blog img{
+        height: 200px;
+    }
+    .blog{
+        align-items: center;
+        height: 300px;
+        padding: 5px;
+    }
+    .text-overlay-clear h2, .text-overlay h2{
+        font-size: 32px;
+    }
+    .opener img{
+        width: 300px;
+    }
+    .opener{
+        left: 33%;
+    }
+    .productinside img{
+        height: 150px;
+    }
+    .product{
+        height: 160px;
+    }
+    .productinside{
+        height: 160px;
+        width: 270px;
+    }
+    .textproduct{
+        height: 150px;
+        padding: 0;
+    }
+    .textproduct a button{
+        height: 25px;
+    }
+    .img2 img{
+        height: 140px;
+    }
+    .slideshow-container{
+        height: 30vh;
+    }
+    .left img{
+        width: 300px;
+    }
+    .benefit{
+        gap: 0;
+    }
+    .matteheadppf{
+        margin: 0;
+    }
+    .animate-left{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #navigation div ul{
+        display: none;
+    }
+    .logo{
+        width: 125px;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .hide{
+        height: max-content;
+        transform: all 0.5s ease-in-out;
+        opacity: 1;
+    }
+    .opener{
+        left: 35%;
+    }
+    .opener img{
+        width: 200px;
+    }
+    .opener h1, .mySlides h1, .benefitmain h1{
+        font-size: 16px;
+    }
+    .content1 h2, .textproduct p, .textproduct h2, .textproduct a button{
+        font-size: 11px;
+    }
+    .text{
+        padding: 0;
+        font-size: 11px;
+    }
+    .textproduct a button{
+        height: 18px;
+        width: 75px;
+        font-size: 8px;
+    }
+    .textproduct{
+        gap: 5px;
+        height: auto;
     }
 }
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless | Blog</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f4f79a9cc1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="search-btn">
+        <div class="search-alignment">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <nav id="navigation">
+        <div class="logo">
+            <a href="./index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
+        </div>
+        <div>
+            <ul class="nav-items">
+
+                <a href="./index.html#company">
+                    <li class="nav-item">Company</li>
+                </a>
+
+                <li class="nav-item">
+                    <select name="products" id="products">
+                        <option value="">Products</option>
+                        <option value="clearppf">Clear PPF</option>
+                        <option value="matteppf">Matte PPF</option>
+                        <option value="precutppf">Pre Cut PPF</option>
+                        <option value="interiorppf">Interior PPF</option>
+                    </select>
+                </li>
+
+                <a href="/blog.html">
+                    <li class="nav-item">Blog</li>
+                </a>
+                <a href="/warranty.html">
+                    <li class="nav-item">Warranty</li>
+                </a>
+
+                <a href="/contact.html">
+                    <li class="nav-item">Contact us</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Company-->
+    
+
+
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+
+            if ($(this).scrollTop() > 100) {
+                $('#navigation').css('background-color', 'black');
+                $('#navigation').css('transition', 'all 2s');
+
+            }
+            else {
+                $('#navigation').css('background-color', 'transparent');
+                $('#navigation').css('transition', 'all 2s');
+            }
+        });
+
+        $('#products').change(function () {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            }
+            else if (value === 'precutppf') {
+                window.location.href = 'precut.html';
+            }
+            else if (value === 'interiorppf') {
+                window.location.href = 'interior.html';
+            }
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
