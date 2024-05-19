@@ -890,7 +890,7 @@ footer{
     margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
-    height: 300px;
+    height: auto;
     overflow-y: scroll;
     border: 1px solid #ccc;
     padding: 20px;
@@ -902,6 +902,7 @@ footer{
 .cleardiv {
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
