@@ -19,12 +19,12 @@
     </div>
     <nav id="navigation">
         <div class="logo">
-            <a href="./index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
+            <a href="index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
         </div>
         <div>
             <ul class="nav-items">
 
-                <a href="./index.html#company">
+                <a href="#company">
                     <li class="nav-item">Company</li>
                 </a>
 
@@ -38,19 +38,36 @@
                     </select>
                 </li>
 
-                <a href="/blog.html">
+                <a href="blog.html">
                     <li class="nav-item">Blog</li>
                 </a>
-                <a href="/warranty.html">
+                <a href="warranty.html">
                     <li class="nav-item">Warranty</li>
                 </a>
-
-                <a href="/contact.html">
+    
+                <a href="contact.html">
                     <li class="nav-item">Contact us</li>
                 </a>
             </ul>
+            <div class="mobile-menu">
+                <button class="display-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
+    
+    <div class="mobile-nav" id="menu">
+            <a href="company.html">Company</a>
+            <!-- <li class="nav-item">
+                <select name="products" id="products">
+                    <option value="">Products</option>
+                    <option value="clearppf">Clear PPF</option>
+                    <option value="matteppf">Matte PPF</option>
+                </select>
+            </li> -->
+            <a href="blog.html">Blog</a>
+            <a href="warranty.html">Warranty</a>
+            <a href="contact.html">Contact us</a>
+    </div>
 
     <!-- BLOG  -->
     <div class="tele">
@@ -75,7 +92,7 @@
         </div>
 
 
-        <div class="blog">
+        <div class="blog blog1">
 
             <div>
                 <p><b>Post 1: PPF over other options</b></p>

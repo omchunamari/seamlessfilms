@@ -19,7 +19,7 @@
         <div>
             <ul class="nav-items">
 
-                <a href="index.html#company">
+                <a href="#company">
                     <li class="nav-item">Company</li>
                 </a>
 
@@ -39,13 +39,30 @@
                 <a href="warranty.html">
                     <li class="nav-item">Warranty</li>
                 </a>
-
+    
                 <a href="contact.html">
                     <li class="nav-item">Contact us</li>
                 </a>
             </ul>
+            <div class="mobile-menu">
+                <button class="display-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
+    
+    <div class="mobile-nav" id="menu">
+            <a href="company.html">Company</a>
+            <!-- <li class="nav-item">
+                <select name="products" id="products">
+                    <option value="">Products</option>
+                    <option value="clearppf">Clear PPF</option>
+                    <option value="matteppf">Matte PPF</option>
+                </select>
+            </li> -->
+            <a href="blog.html">Blog</a>
+            <a href="warranty.html">Warranty</a>
+            <a href="contact.html">Contact us</a>
+    </div>
     <div class="warrantyform">
         <h2>Fill out the form below to get your warranty. We will get back to you shortly.</h2>
         <!--Warranty Form-->
@@ -100,9 +117,9 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="radio"  value="Clear PPF - 5 years" name="opt1" required>Clear PPF - 5 years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio"  value="Clear PPF - 7 years" name="opt1" required>Clear PPF - 7 years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="opt1" value="Matte PPF" required>Matte PPF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+                        <div><input type="radio"  value="Clear PPF - 5 years" name="opt1" required>Clear PPF - 5 years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <div><input type="radio"  value="Clear PPF - 7 years" name="opt1" required>Clear PPF - 7 years&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <div><input type="radio" name="opt1" value="Matte PPF" required>Matte PPF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>           
                     </td>
                 </tr>
 
@@ -162,6 +179,7 @@
         <p>Copyright &copy; 2024 Seamless Films. All Rights Reserved. </p>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(window).on('scroll', function () {

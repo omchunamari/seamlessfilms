@@ -72,11 +72,6 @@ nav {
     padding: 10px;
 }
 
-.nav-item select option:hover{
-    background-color: rgb(186, 186, 186);
-    color: rgb(37, 37, 37);
-}
-
 .nav-item select{
     font-weight: 800;
     font-size: 18px;
@@ -485,6 +480,13 @@ footer{
     text-align: left;
     margin-right: 15px;
     gap: 10px;
+}
+
+.textproduct1{
+    padding-left: 100px;
+}
+.textproduct2{
+    padding-right: 100px;
 }
 
 .textproduct a{
@@ -1244,47 +1246,41 @@ footer{
 /* mobile responsive */
 .mobile-nav{
     display: none;
-    margin-top: 50px;
+    margin-top: 10vh;
+    transition: all 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
 }
-.mobile-nav ul li{
+.mobile-nav a{
     background-color: #222;
     color: white;
     padding: 2px 20px;
-    list-style: none;
     width: 100%;
     height: 30px;
     font-size: 14px;
-    transition: all 0.3s ease;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    flex-direction: column;
 }
-.mobile-nav ul li:hover{
+.mobile-nav a:hover{
     background-color: rgb(149, 149, 149);
     color: black;
 }
-.mobile-nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-.fa-times{
-    display: none;
-}
+
 .mobile-menu{
     display: none;
 }
-.mobile-nav ul{
-    height: 0;
-    overflow: hidden;
-}
-.mobile-menu .fa-times{
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: white;
-    font-size: 20px;
-}
 
+.display-menu{
+    max-height: 150px;
+}
+.display-btn{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
 
 
 /* media responsiven for mobile */
@@ -1376,6 +1372,12 @@ footer{
     .textproduct{
         padding: 10px;
     }
+    .textproduct1{
+        padding-left: 75px;
+    }
+    .textproduct2{
+        padding-right: 75px;
+    }
     .animate-left{
         font-size: 30px;
     }
@@ -1441,6 +1443,12 @@ footer{
     }
     .mySlides h1{
         font-size: 32px;
+    }
+    .textproduct1{
+        padding-left: 50px;
+    }
+    .textproduct2{
+        padding-right: 50px;
     }
 }
 
@@ -1517,6 +1525,12 @@ footer{
     .animate-left{
         margin: 0;
     }
+    .textproduct1{
+        padding-left: 25px;
+    }
+    .textproduct2{
+        padding-right: 25px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1530,7 +1544,10 @@ footer{
         display: block;
     }
     .mobile-nav{
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
     }
     .hide{
         height: max-content;
@@ -1538,20 +1555,22 @@ footer{
         opacity: 1;
     }
     .opener{
-        left: 35%;
+        left: 30%;
     }
     .opener img{
         width: 200px;
     }
-    .opener h1, .mySlides h1, .benefitmain h1{
+    .opener h1, .mySlides h1, .benefitmain h1, .contact1 h1, .contactform h1{
         font-size: 16px;
     }
-    .content1 h2, .textproduct p, .textproduct h2, .textproduct a button{
-        font-size: 11px;
+    .content1 h2, .textproduct p, .textproduct h2, .textproduct a button, .benefitinside, .copyright, .text{
+        font-size: 8px;
+    }
+    footer, .companyinfo, .address, .address p, .social-icons a, .companyinfo p, .nav-links a, .warrantyform form table input[type = "text"], .warrantyform form input[type="date"], .warrantyform form input[type="radio"],.warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+        font-size: 10px;
     }
     .text{
         padding: 0;
-        font-size: 11px;
     }
     .textproduct a button{
         height: 18px;
@@ -1561,6 +1580,164 @@ footer{
     .textproduct{
         gap: 5px;
         height: auto;
+    }
+    .left img{
+        width: 200px;
+    }
+    .splitdiv{
+        height: 30vh;
+    }
+    .benefit{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefitinside{
+        height: 150px;
+    }
+    .benefitmain{
+        height: max-content;
+        width: 100%;
+    }
+    footer{
+        height: max-content;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .companyinfo, .address, .address p{
+        align-items: center;
+        text-align: center;
+    }
+    .textproduct1{
+        padding-left: 0px;
+    }
+    .textproduct2{
+        padding-right: 0px;
+    }
+    .textproduct{
+        padding: 5px;
+        margin: 0;
+    }
+    .slideshow-container{
+        height: 150px;
+    }
+    .warrantyform form table td{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .warrantyform form table input[type="date"]{
+        width: 100%;
+    }
+    .warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+        width: 150px;
+        align-items: flex-start;
+    }
+    .warrantyform{
+        margin: 0;
+        gap: 25px;
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+        height: auto;
+        margin: 25px 0;
+    }
+    .contactform{
+        height: auto;
+        padding: 10px;
+    }
+    .contact1{
+        padding: 25px;
+    }
+    .card, .contactform form table td{
+        padding: 10px;
+    }
+    .contact1 h2, .contactform h2, .contactform form table input, .card p a, .warrantyform h2{
+        font-size: 14px;
+    }
+    .par{
+        height: auto;
+        margin: 20px;
+    }
+    .breadcrumb button{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .blog{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+        text-align: justify;
+        font-size: 10px;
+    }
+    .blog img{
+        width: 100%;
+    }
+    .blog1{
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (max-width: 400px){
+    .content1{
+        padding: 10px;
+    }
+    .right{
+        padding-right: 10px;
+    }
+    .opener{
+        top: 25%;
+        left: 25%;
+    }
+    .productinside img{
+        width: 100%;
+        height: auto;
+        border-bottom: solid white 5px;
+    }
+    .product{
+        height: auto;
+        flex-direction: column;
+        border: 5px white solid;
+        overflow: hidden;
+        padding: 0;
+    }
+    .img2 img{
+        width: 100%;
+        height: auto;
+        border-bottom: solid white 5px;
+    }
+    .productinside{
+        height: auto;
+        width: fit-content;
+    }
+    .textproduct{
+        width: 100%;
+;       padding: 10px;
+    }
+    .textproduct p{
+        font-weight: 100;
+    }
+    .textproduct h2{
+        font-weight: 900;
+    }
+    .product1{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .textproduct1, .textproduct1 p{
+        align-items: flex-end;
+        text-align: right;
+    }
+    .slideshow-container{
+        padding: 0 5%;
+        flex-wrap: wrap;
+        width: 90%;
+        align-items: center;
     }
 }
 

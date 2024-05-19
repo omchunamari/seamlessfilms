@@ -53,14 +53,13 @@
                 </a>
             </ul>
             <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
+                <button class="display-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
     
-    <div class="mobile-nav">
-        <ul class="hide">
-            <li><a href="company.html">Company</a></li>
+    <div class="mobile-nav" id="menu">
+            <a href="company.html">Company</a>
             <!-- <li class="nav-item">
                 <select name="products" id="products">
                     <option value="">Products</option>
@@ -68,10 +67,9 @@
                     <option value="matteppf">Matte PPF</option>
                 </select>
             </li> -->
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="warranty.html">Warranty</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
+            <a href="blog.html">Blog</a>
+            <a href="warranty.html">Warranty</a>
+            <a href="contact.html">Contact us</a>
     </div>
 
     <!-- video  -->
@@ -127,8 +125,8 @@
 
     <!-- product redirection  -->
     <!--Clear PPF-->
-    <div class="product" style="border-bottom: none;">
-        <div class="textproduct" style="padding-left: 100px;">
+    <div class="product product1" style="border-bottom: none;">
+        <div class="textproduct textproduct1">
             <h2>Clear Paint Protection Film</h2>
             <p>Protect your investment with virtually invisible armor - Clear Paint Protection Film shields your car
                 from scratches, chips, and environmental damage, preserving its pristine appearance for years to come.
@@ -144,7 +142,7 @@
     <div class="product">
         <div class="img2 productinside"><img src="./ppf images/matte ppf with arroww.png" width="700px" height="400px"
                 alt="not possible"></div>
-        <div class="textproduct" style="padding-right: 100px;">
+        <div class="textproduct textproduct2">
             <h2>Matte Paint Protection Film</h2>
             <p>Preserve your masterpiece with our specialized Matte Paint Protection Film, safeguarding your
                 vehicle's unique finish against scratches and maintaining its distinctive look.</p>
@@ -262,7 +260,7 @@
 
         $(window).on('scroll', function () {
 
-            if ($(this).scrollTop() > 300) {
+            if ($(this).scrollTop() > 100) {
                 $('#navigation').css('background-color', 'black');
                 $('#navigation').css('transition', 'all 2s');
 
@@ -290,9 +288,7 @@
 
         });
 
-        document.getElementsByClassName("fa-bars").addEventListener("click", function () {
-            document.getElementsByClassName("mobile-nav").classList.toggle("hide"); 
-        });
+        
 
     </script>
 </body>
