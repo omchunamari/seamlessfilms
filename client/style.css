@@ -1251,12 +1251,13 @@ footer{
 /* mobile responsive */
 .mobile-nav{
     display: none;
-    margin-top: 10vh;
+    margin-top: 15vh;
     transition: all 0.3s ease-out;
     max-height: 0;
     overflow: hidden;
     z-index: 1;
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 .mobile-nav a{
     background-color: #222;
