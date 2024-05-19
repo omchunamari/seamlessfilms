@@ -18,3 +18,19 @@ function showSlides() {
 function toggleMobileMenu() {
   document.getElementById("menu").classList.toggle("display-menu");
 }
+
+$('#products1').change(function () {
+  var value = $(this).val();
+  if (value === 'clearppf') {
+      window.location.href = 'clearppf.html';
+  } else if (value === 'matteppf') {
+      window.location.href = 'matteppf.html';
+  }
+  else if (value === 'precutppf') {
+      window.location.href = 'precut.html';
+  }
+  else if (value === 'interiorppf') {
+      window.location.href = 'interior.html';
+  }
+
+});

@@ -67,9 +67,13 @@ nav {
 .nav-item select option{
     font-weight: 800;
     font-size: 18px;
-    background-color: #dedede;
-    color: rgb(37, 37, 37);
+    background-color: #101010;
+    color: gray;
     padding: 10px;
+}
+
+.nav-item select option:hover{
+    box-shadow: 0 0 10px 100px #1882A8 inset;
 }
 
 .nav-item select{
@@ -886,7 +890,7 @@ footer{
     margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
-    height: 400px;
+    height: 300px;
     overflow-y: scroll;
     border: 1px solid #ccc;
     padding: 20px;
@@ -1072,13 +1076,13 @@ footer{
 
 @keyframes dangle {
     0% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(5px);
     }
 }
 
@@ -1250,6 +1254,8 @@ footer{
     transition: all 0.3s ease-out;
     max-height: 0;
     overflow: hidden;
+    z-index: 1;
+    position: relative;
 }
 .mobile-nav a{
     background-color: #222;
@@ -1263,6 +1269,21 @@ footer{
     align-items: flex-start;
     text-decoration: none;
     flex-direction: column;
+}
+.mobile-nav select {
+    background-color: #222;
+    color: white;
+    padding: 2px 16px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    outline: none;
+    border: none;
 }
 .mobile-nav a:hover{
     background-color: rgb(149, 149, 149);
@@ -1531,6 +1552,9 @@ footer{
     .textproduct2{
         padding-right: 25px;
     }
+    .matte_img{
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1560,13 +1584,45 @@ footer{
     .opener img{
         width: 200px;
     }
-    .opener h1, .mySlides h1, .benefitmain h1, .contact1 h1, .contactform h1{
+    .text-overlay-clear h2, .text-overlay h2{
+        font-size: 20px;
+    }
+    .text-overlay-clear, .text-overlay{
+        left: 25%;
+        top: 10%;
+        z-index: 0;
+    }
+    .text-overlay{
+        margin: 0;
+        margin-left: 25px;
+    }
+    .matte_img{
+        height: auto;
+    }
+    .matteheadppf{
+        top: 40%;
+    }
+    .clearcontainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        margin: 30px;
+        padding: 30px 10px;
+    }
+    
+    .cleardiv{
+        width: 100%;
+        margin: 20px;
+    }
+    .opener h1, .mySlides h1, .benefitmain h1, .contact1 h1, .contactform h1, .animate-left, .features{
         font-size: 16px;
     }
     .content1 h2, .textproduct p, .textproduct h2, .textproduct a button, .benefitinside, .copyright, .text{
         font-size: 8px;
     }
-    footer, .companyinfo, .address, .address p, .social-icons a, .companyinfo p, .nav-links a, .warrantyform form table input[type = "text"], .warrantyform form input[type="date"], .warrantyform form input[type="radio"],.warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+    footer, .companyinfo, .address, .address p, .social-icons a, .companyinfo p, .nav-links a, .warrantyform form table input[type = "text"], .warrantyform form input[type="date"], .warrantyform form input[type="radio"],.warrantyform form button[type="submit"], .contactform form input[type="submit"], .matte_text{
         font-size: 10px;
     }
     .text{
@@ -1657,7 +1713,7 @@ footer{
     .card, .contactform form table td{
         padding: 10px;
     }
-    .contact1 h2, .contactform h2, .contactform form table input, .card p a, .warrantyform h2{
+    .contact1 h2, .contactform h2, .contactform form table input, .card p a, .warrantyform h2, .cppfproduct, .cppfproduct2{
         font-size: 14px;
     }
     .par{
@@ -1681,6 +1737,22 @@ footer{
     }
     .blog1{
         flex-direction: column-reverse;
+    }
+
+    /* products  */
+    .maincontent{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-clear, .content-clear2, .content{
+        width: 100%;
+        height: auto;
+
+    }
+    .withincontent, .withincontent2{
+        margin-top: 25px;
     }
 }
 @media only screen and (max-width: 400px){

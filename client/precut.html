@@ -51,13 +51,13 @@
     
     <div class="mobile-nav" id="menu">
             <a href="company.html">Company</a>
-            <!-- <li class="nav-item">
-                <select name="products" id="products">
-                    <option value="">Products</option>
-                    <option value="clearppf">Clear PPF</option>
-                    <option value="matteppf">Matte PPF</option>
-                </select>
-            </li> -->
+            <select name="products1" id="products1">
+                <option value="">Products</option>
+                <option value="clearppf">Clear PPF</option>
+                <option value="matteppf">Matte PPF</option>
+                <option value="precutppf">Pre Cut PPF</option>
+                <option value="interiorppf">Interior PPF</option>
+            </select>
             <a href="blog.html">Blog</a>
             <a href="warranty.html">Warranty</a>
             <a href="contact.html">Contact us</a>
@@ -74,7 +74,7 @@
     <!--Matte Features !-->
     <div class="matteheadingcontainer">
         <div class="matteheadppf">
-            <h2 class="animate-left">PRECUT PPF: TAILORED PROTECTION, FLAWLESS FINISH</h2>
+            <h2 class="animate-left">TAILORED PROTECTION, FLAWLESS FINISH</h2>
         </div>
     </div>
     <div class=matte_text>
@@ -84,7 +84,6 @@
         <h1 class="features">FEATURES</h1>
     </div>
     <div class="clearcontainer" id="scroll">
-        <br><br><br>
         <div class="cleardiv"> <img src="./ppf images/icons8-car-insurance-66.png" alt="" class="float-left">
             <div class="content-wrapper">
                 <h4>HEAT SELF-HEALING TECHNOLOGY</h4>
@@ -256,6 +255,22 @@
                 window.location.href = 'interior.html';
             }
         });
+
+        $('#products1').change(function () {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            }
+            else if (value === 'precutppf') {
+                window.location.href = 'precut.html';
+            }
+            else if (value === 'interiorppf') {
+                window.location.href = 'interior.html';
+            }
+
+        });
     </script>
     <script>
         function restartAnimation() {
@@ -371,6 +386,8 @@
         }
 
         window.addEventListener('scroll', handleScroll);
+
+        
     </script>
 
 </body>
