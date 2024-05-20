@@ -970,7 +970,7 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     transition: opacity 2s ease-in-out;
-    background-image: url("/ppf images/iconsback1.jpg");
+    background-image: url("./ppf images/iconsback1.jpg");
 }
 
 .content.animate {
@@ -984,7 +984,7 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     transition: opacity 2s ease-in-out;
-    background-image: url("/ppf images/iconsbackclear.avif");
+    background-image: url("./ppf images/iconsbackclear.avif");
 }
 
 .content-clear.animate {
@@ -998,7 +998,7 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     transition: opacity 2s ease-in-out;
-    background-image: url("/ppf images/iconsbackclear2.jpg");
+    background-image: url("./ppf images/iconsbackclear2.jpg");
 }
 
 .content-clear2.animate {
@@ -1147,7 +1147,7 @@ footer {
     margin: 0 auto;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     /* background-color: black; */
     font-family: "Arial White", Arial, sans-serif;
     font-size: 24px;
