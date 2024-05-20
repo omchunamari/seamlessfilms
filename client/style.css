@@ -138,7 +138,7 @@ nav {
 
 .opener h1 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -152,7 +152,7 @@ nav {
     }
     100% {
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1.2);
     }
 }
 
@@ -1263,12 +1263,13 @@ footer {
 
 .mobile-nav {
     display: none;
-    margin-top: 10vh;
+    margin-top: 15vh;
     transition: all 0.3s ease-out;
     max-height: 0;
     overflow: hidden;
     z-index: 1;
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .mobile-nav a {
@@ -1428,6 +1429,9 @@ footer {
     .animate-left {
         font-size: 30px;
     }
+    .warrantyform {
+        margin-top: 10vh;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1501,6 +1505,9 @@ footer {
     .textproduct2 {
         padding-right: 50px;
     }
+    .warrantyform {
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1532,7 +1539,7 @@ footer {
     }
     .warrantyform {
         padding: 0 20px;
-        margin-top: 75px;
+        margin-top: 15vh;
         height: auto;
     }
     .blog img {
@@ -1771,7 +1778,6 @@ footer {
     .contact {
         flex-direction: column;
         height: auto;
-        margin: 25px 0;
     }
     .contactform {
         height: auto;
@@ -1891,6 +1897,12 @@ footer {
         flex-wrap: wrap;
         width: 90%;
         align-items: center;
+    }
+    .warrantyform {
+        margin-top: 40px;
+    }
+    .contact {
+        margin-top: 10vh;
     }
 }
 
