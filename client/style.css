@@ -1480,6 +1480,9 @@ footer{
     .textproduct2{
         padding-right: 50px;
     }
+    .warrantyform{
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1563,6 +1566,9 @@ footer{
     }
     .matte_img{
         height: auto;
+    }
+    .warrantyform{
+        margin-top: 40px;
     }
 }
 
@@ -1703,6 +1709,7 @@ footer{
         align-items: flex-start;
     }
     .warrantyform{
+        margin-top: 40px;
         margin: 0;
         gap: 25px;
         padding: 20px;
@@ -1819,6 +1826,10 @@ footer{
         flex-wrap: wrap;
         width: 90%;
         align-items: center;
+    }
+
+    .warrantyform{
+        margin-top: 40px;
     }
 }
 
