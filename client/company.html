@@ -63,7 +63,6 @@
         <a href="warranty.html">Warranty</a>
         <a href="contact.html">Contact us</a>
     </div>
-    <br><br><br>
     <!--Company-->
     <!--About Seamless-->
     <div>
@@ -73,9 +72,9 @@
         </div>
     </div>
     <div class="companydiv">
-        <div>
+        <div class="comapany_img">
             <!--Here Seamless Related image required-->
-            <img src="\ppf images\companyimg1.jpg" alt="" class="comapany_img">
+            <img src="\ppf images\companyimg1.jpg" alt="" >
         </div>
         <div class="company_text">
             <h2 class="company_headings">SEAMLESS: Pinnacle of Car Paint Protection</h2>
@@ -84,15 +83,15 @@
         </div>
     </div>
     <!--Vision OF seamless ppf-->
+    <div class="company-vision">
     <div class="companys_vision">
-        <br>
         <h2 class="companys_headings">Vision</h2>
         <br>
         <p class="companys_text">Our vision at SEAMLESS is to redefine automotive protection by setting new standards in paint protection film technology. We aim to be the industry leader in delivering innovative, high- quality solutions that exceed our customers' expectations.
             With a focus on continuous improvement and customer satisfaction, we strive to provide the ultimate protection for vehicles, ensuring they maintain their pristine appearance for years to come. Our vision is to be recognized as the go-to choice
             for automotive enthusiasts and drivers seeking unparalleled paint protection.</p>
     </div>
-    <br>
+</div>
     <!--Seamless is best-->
     <div class="companysdiv">
         <div class="companys_texts">
@@ -100,9 +99,9 @@
             of damage. We likely specialize in categorising and importing high-quality PPF products that offer superior durability, clarity, and resistance to scratches, rock chips, and environmental elements. Transparency, innovation, and a commitment
             to excellence are probably key values driving SEAMLESS forward.
         </div>
-        <div>
+        <div class="comapany_img">
             <!--Here Seamless Related image required-->
-            <img src="\ppf images\companyimg1.jpg" alt="" class="comapany_img">
+            <img src="\ppf images\companyimg1.jpg" alt="">
         </div>
     </div>
 
@@ -165,6 +164,22 @@
             } else if (value === 'precutppf') {
                 window.location.href = 'precut.html';
             } else if (value === 'interiorppf') {
+                window.location.href = 'interior.html';
+            }
+
+        });
+
+        $('#products1').change(function () {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            }
+            else if (value === 'precutppf') {
+                window.location.href = 'precut.html';
+            }
+            else if (value === 'interiorppf') {
                 window.location.href = 'interior.html';
             }
 
