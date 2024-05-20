@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seamless | Blog</title>
+    <title>Seamless | Company</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f4f79a9cc1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="search-btn">
-        <div class="search-alignment">
-            <input type="text" placeholder="Search...">
-            <button><i class="fas fa-search"></i></button>
-        </div>
-    </div>
+
     <nav id="navigation">
         <div class="logo">
             <a href="index.html"><img src="./logo1.png" alt="Seamless Films" class="logo"></a>
@@ -44,7 +39,7 @@
                 <a href="warranty.html">
                     <li class="nav-item">Warranty</li>
                 </a>
-    
+
                 <a href="contact.html">
                     <li class="nav-item">Contact us</li>
                 </a>
@@ -54,43 +49,127 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="mobile-nav" id="menu">
-            <a href="company.html">Company</a>
-            <select name="products1" id="products1">
+        <a href="company.html">Company</a>
+        <select name="products1" id="products1">
                 <option value="">Products</option>
                 <option value="clearppf">Clear PPF</option>
                 <option value="matteppf">Matte PPF</option>
                 <option value="precutppf">Pre Cut PPF</option>
                 <option value="interiorppf">Interior PPF</option>
             </select>
-            <a href="blog.html">Blog</a>
-            <a href="warranty.html">Warranty</a>
-            <a href="contact.html">Contact us</a>
+        <a href="blog.html">Blog</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+    <!--Company-->
+    <!--About Seamless-->
+    <div>
+        <img src="./ppf images/companyimg2.jpg" alt="" class="matte_img">
+        <div class="comapany_img_txt">
+            <h2>About Seamless</h2>
+        </div>
+    </div>
+    <div class="companydiv">
+        <div class="comapany_img">
+            <!--Here Seamless Related image required-->
+            <img src="./ppf images/companyimg1.jpg" alt="" >
+        </div>
+        <div class="company_text">
+            <h2 class="company_headings">SEAMLESS: Pinnacle of Car Paint Protection</h2>
+            <br> SEAMLESS PPF is like armor for your vehicle's paint, safeguarding it from scratches, chips, and other forms of damage caused by everyday wear and tear. It's a transparent, durable film applied to the exterior of the car, providing a seamless
+            shield that preserves the beauty and value of your vehicle. Whether you're driving on highways or navigating through urban streets, PPF ensures that your car's paint remains flawless, reflecting your commitment to quality and protection.
+        </div>
+    </div>
+    <!--Vision OF seamless ppf-->
+    <div class="company-vision">
+    <div class="companys_vision">
+        <h2 class="companys_headings">Vision</h2>
+        <br>
+        <p class="companys_text">Our vision at SEAMLESS is to redefine automotive protection by setting new standards in paint protection film technology. We aim to be the industry leader in delivering innovative, high- quality solutions that exceed our customers' expectations.
+            With a focus on continuous improvement and customer satisfaction, we strive to provide the ultimate protection for vehicles, ensuring they maintain their pristine appearance for years to come. Our vision is to be recognized as the go-to choice
+            for automotive enthusiasts and drivers seeking unparalleled paint protection.</p>
+    </div>
+</div>
+    <!--Seamless is best-->
+    <div class="companysdiv">
+        <div class="companys_texts">
+            <h2 class="companys_headingss">"SEAMLESS: Ultimate Car Paint Protection Excellence"</h2><br> As a car paint protection film (PPF) company, we are centered on preserving and enhancing the appearance of vehicles while providing long-lasting protection against various forms
+            of damage. We likely specialize in categorising and importing high-quality PPF products that offer superior durability, clarity, and resistance to scratches, rock chips, and environmental elements. Transparency, innovation, and a commitment
+            to excellence are probably key values driving SEAMLESS forward.
+        </div>
+        <div class="comapany_img">
+            <!--Here Seamless Related image required-->
+            <img src="./ppf images/companyimg1.jpg" alt="">
+        </div>
     </div>
 
-    <!--Company-->
-    
+    <footer>
+        <div class="companyinfo">
+            <a href="/"><img src="./logo.png" alt="Seamless Films"></a>
+            <span>Paint Protection Films</span>
+            <br>
+            <p>Seamless Films is a leading provider of paint protection films. We offer a diverse range of products to meet the diverse needs of our customers. Our team of experts has years of experience in the field. We would like to welcome you to Seamless
+                Films.
+            </p>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Company</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="address">
+            <p>Address: Shop No. 16, Kharghar Station Road Vasundhara CHS, 17, Sector 8, Kharghar, Navi Mumbai, Maharashtra 410210</p>
+            <p>Phone: <a href="tel:+919920539360">9920539360</a></p>
+            <p>Email: <a href="mailto:info@seamlessfilms.com">info@seamlessfilms.com</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
 
 
 
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(window).on('scroll', function () {
+        $(window).on('scroll', function() {
 
             if ($(this).scrollTop() > 100) {
                 $('#navigation').css('background-color', 'black');
                 $('#navigation').css('transition', 'all 2s');
 
-            }
-            else {
+            } else {
                 $('#navigation').css('background-color', 'transparent');
                 $('#navigation').css('transition', 'all 2s');
             }
         });
 
-        $('#products').change(function () {
+        $('#products').change(function() {
+            var value = $(this).val();
+            if (value === 'clearppf') {
+                window.location.href = 'clearppf.html';
+            } else if (value === 'matteppf') {
+                window.location.href = 'matteppf.html';
+            } else if (value === 'precutppf') {
+                window.location.href = 'precut.html';
+            } else if (value === 'interiorppf') {
+                window.location.href = 'interior.html';
+            }
+
+        });
+
+        $('#products1').change(function () {
             var value = $(this).val();
             if (value === 'clearppf') {
                 window.location.href = 'clearppf.html';
@@ -105,10 +184,67 @@
             }
 
         });
-
-
-
     </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const companyImgText = document.querySelector('.comapany_img_txt');
+            const companyImgTextPosition = companyImgText.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (companyImgTextPosition < windowHeight * 0.8) {
+                companyImgText.classList.add('enlarged');
+            } else {
+                companyImgText.classList.remove('enlarged');
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const companyText = document.querySelector('.company_text');
+            const companyTextPosition = companyText.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (companyTextPosition < windowHeight * 0.8) {
+                companyText.style.opacity = '1';
+                companyText.style.transform = 'translateY(0)'; // Reset the translation
+            } else {
+                companyText.style.opacity = '0';
+                companyText.style.transform = 'translateY(50px)'; // Move the text down and out of view
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const companyVision = document.querySelector('.companys_vision');
+            const companyVisionPosition = companyVision.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            const companyText = companyVision.querySelector('.companys_text');
+
+            if (companyVisionPosition < windowHeight * 0.8) {
+                companyText.style.animation = 'slide-in 1s forwards';
+            } else {
+                companyText.style.animation = 'none';
+                companyText.style.transform = 'translateX(-100%)';
+                companyText.style.opacity = '0';
+            }
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const companyText = document.querySelector('.companys_texts');
+            const companyTextPosition = companyText.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (companyTextPosition < windowHeight * 0.8) {
+                companyText.style.opacity = '1';
+                companyText.style.transform = 'translateY(0)'; // Reset the translation
+            } else {
+                companyText.style.opacity = '0';
+                companyText.style.transform = 'translateY(50px)'; // Move the text down and out of view
+            }
+        });
+    </script>
+
 </body>
 
 </html>
