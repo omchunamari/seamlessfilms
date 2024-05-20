@@ -120,11 +120,11 @@ nav {
 }
 
 .opener {
-    width: fit-content;
+    width: max-content;
     height: fit-content;
     position: absolute;
     top: 35%;
-    left: 30%;
+    left: 42%;
     animation: Zoomoutin 2s cubic-bezier(0.96, -0.29, 1, 0.99);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -136,7 +136,7 @@ nav {
     font-size: 80px;
 }
 
-.opener h1 {
+.opener h2 {
     color: white;
     font-size: 20px;
     text-align: center;
@@ -1328,7 +1328,7 @@ footer {
     .opener img {
         width: 500px;
     }
-    .opener h1 {
+    .opener h2 {
         font-size: 20px;
     }
     .content1 h2 {
@@ -1666,7 +1666,7 @@ footer {
         width: 100%;
         margin: 20px;
     }
-    .opener h1,
+    .opener h2,
     .mySlides h1,
     .benefitmain h1,
     .contact1 h1,
