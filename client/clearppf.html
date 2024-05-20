@@ -18,7 +18,7 @@
         <div>
             <ul class="nav-items">
 
-                <a href="#company">
+                <a href="company.html">
                     <li class="nav-item">Company</li>
                 </a>
 
@@ -38,7 +38,7 @@
                 <a href="warranty.html">
                     <li class="nav-item">Warranty</li>
                 </a>
-    
+
                 <a href="contact.html">
                     <li class="nav-item">Contact us</li>
                 </a>
@@ -48,19 +48,19 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="mobile-nav" id="menu">
-            <a href="company.html">Company</a>
-            <select name="products1" id="products1">
+        <a href="company.html">Company</a>
+        <select name="products1" id="products1">
                 <option value="">Products</option>
                 <option value="clearppf">Clear PPF</option>
                 <option value="matteppf">Matte PPF</option>
                 <option value="precutppf">Pre Cut PPF</option>
                 <option value="interiorppf">Interior PPF</option>
             </select>
-            <a href="blog.html">Blog</a>
-            <a href="warranty.html">Warranty</a>
-            <a href="contact.html">Contact us</a>
+        <a href="blog.html">Blog</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="contact.html">Contact us</a>
     </div>
     <!--Clear Description-->
     <!--Images Here-->
@@ -87,7 +87,7 @@
     </div>
     <!--Features-->
     <div class="clearcontainer" id="scroll">
-        
+
         <div class="cleardiv"> <img src="./ppf images/icons8-car-insurance-66.png" alt="" class="float-left">
             <div class="content-wrapper">
                 <h4>ADVANCED CLARITY</h4>
@@ -338,33 +338,29 @@
         });
 
 
-        $('#products').change(function () {
+        $('#products').change(function() {
             var value = $(this).val();
             if (value === 'clearppf') {
                 window.location.href = 'clearppf.html';
             } else if (value === 'matteppf') {
                 window.location.href = 'matteppf.html';
-            }
-            else if (value === 'precutppf') {
+            } else if (value === 'precutppf') {
                 window.location.href = 'precut.html';
-            }
-            else if (value === 'interiorppf') {
+            } else if (value === 'interiorppf') {
                 window.location.href = 'interior.html';
             }
 
         });
 
-        $('#products1').change(function () {
+        $('#products1').change(function() {
             var value = $(this).val();
             if (value === 'clearppf') {
                 window.location.href = 'clearppf.html';
             } else if (value === 'matteppf') {
                 window.location.href = 'matteppf.html';
-            }
-            else if (value === 'precutppf') {
+            } else if (value === 'precutppf') {
                 window.location.href = 'precut.html';
-            }
-            else if (value === 'interiorppf') {
+            } else if (value === 'interiorppf') {
                 window.location.href = 'interior.html';
             }
 

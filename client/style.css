@@ -12,7 +12,6 @@ body {
 }
 
 nav {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +24,6 @@ nav {
     top: 0;
     z-index: 1;
 }
-
-
 
 #products {
     background: transparent;
@@ -64,7 +61,7 @@ nav {
     transition-duration: 0.1s;
 }
 
-.nav-item select option{
+.nav-item select option {
     font-weight: 800;
     font-size: 18px;
     background-color: #101010;
@@ -72,27 +69,22 @@ nav {
     padding: 10px;
 }
 
-.nav-item select option:hover{
+.nav-item select option:hover {
     box-shadow: 0 0 10px 100px #1882A8 inset;
 }
 
-.nav-item select{
+.nav-item select {
     font-weight: 800;
     font-size: 18px;
     width: 110px;
     height: 30px;
-    
 }
-
 
 .nav-item:hover {
     transition: 0.5s;
     transform: scale(1.05);
     color: rgb(186, 186, 186);
 }
-
-
-
 
 .loader-wrapper {
     width: 100vw;
@@ -127,24 +119,24 @@ nav {
     position: relative;
 }
 
-.opener{
+.opener {
     width: fit-content;
     height: fit-content;
     position: absolute;
     top: 35%;
     left: 30%;
-    animation: Zoomoutin 2s cubic-bezier(0.96,-0.29, 1, 0.99); 
+    animation: Zoomoutin 2s cubic-bezier(0.96, -0.29, 1, 0.99);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-.opener a{
+.opener a {
     text-decoration: none;
     color: white;
     font-size: 80px;
 }
 
-.opener h1{
+.opener h1 {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -253,15 +245,13 @@ nav {
     height: 50vh;
 }
 
-
-
-.benefitmain{
+.benefitmain {
     position: relative;
-    
 }
 
 
 /* slider  */
+
 * {
     box-sizing: border-box
 }
@@ -279,7 +269,7 @@ nav {
     color: white;
 }
 
-.mySlides h1{
+.mySlides h1 {
     bottom: 50%;
     position: absolute;
     width: 100%;
@@ -332,13 +322,13 @@ nav {
     from {
         opacity: 0.2;
     }
-
     to {
         opacity: 1
     }
 }
+
 .benefitmain {
-    background-image: url("background\ for\ text\ 3.png") ;
+    background-image: url("background\ for\ text\ 3.png");
     align-content: center;
     background-color: black;
     padding: 20px;
@@ -367,12 +357,13 @@ nav {
     gap: 10px;
 }
 
-.benefit{
+.benefit {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
-footer{
+
+footer {
     color: white;
     padding: 50px 100px;
     text-align: center;
@@ -384,12 +375,13 @@ footer{
     gap: 100px;
 }
 
-.social-icons a{
+.social-icons a {
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     gap: 30px;
     flex-direction: row;
@@ -398,7 +390,7 @@ footer{
     width: max-content;
 }
 
-.companyinfo{
+.companyinfo {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -408,11 +400,12 @@ footer{
     flex-basis: 30%;
     font-size: 18px;
 }
-.companyinfo img{
+
+.companyinfo img {
     width: 175px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -422,18 +415,17 @@ footer{
     width: max-content;
 }
 
-.nav-links ul li{
-    list-style-type:disc;
+.nav-links ul li {
+    list-style-type: disc;
     font-size: 20px;
 }
 
-.nav-links ul li a{ 
+.nav-links ul li a {
     text-decoration: none;
     color: white;
-
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -442,20 +434,20 @@ footer{
     flex-basis: 30%;
 }
 
-.address p{
+.address p {
     font-size: 18px;
     text-align: justify;
 }
-.address p a{
+
+.address p a {
     text-decoration: none;
     color: white;
 }
 
-
-
-.map{
+.map {
     opacity: 0.8;
 }
+
 .product {
     background-color: black;
     display: flex;
@@ -467,7 +459,6 @@ footer{
 .productinside {
     width: 700px;
     height: 400px;
-
 }
 
 .textproduct {
@@ -486,18 +477,19 @@ footer{
     gap: 10px;
 }
 
-.textproduct1{
+.textproduct1 {
     padding-left: 100px;
 }
-.textproduct2{
+
+.textproduct2 {
     padding-right: 100px;
 }
 
-.textproduct a{
- 
+.textproduct a {
     text-decoration: none;
 }
-.textproduct a button{
+
+.textproduct a button {
     height: 35px;
     width: 125px;
     background-color: rgb(0, 0, 0);
@@ -510,17 +502,16 @@ footer{
     transition-duration: 0.3s;
 }
 
-.textproduct a button:hover{
+.textproduct a button:hover {
     background-color: white;
     color: black;
-    
 }
 
 .imageinside {
     transform: rotate(180deg);
 }
 
-.copyright{
+.copyright {
     color: white;
     display: flex;
     justify-content: center;
@@ -529,33 +520,40 @@ footer{
     padding: 20px;
     background-color: #000;
 }
-.productoutside{
+
+.productoutside {
     display: flex;
     flex-direction: row;
-    border: solid 5px;  
+    border: solid 5px;
 }
-.productinner{
+
+.productinner {
     width: 800px;
     height: 350px;
 }
-.productcontent{
+
+.productcontent {
     text-align: center;
     margin-top: 250px;
     justify-content: center;
     align-items: center;
 }
 
+
 /* contact  */
-.contact{
+
+.contact {
     display: flex;
     margin-top: 70px;
     height: 80vh;
     align-items: center;
 }
-.contact h1{
+
+.contact h1 {
     font-size: 54px;
 }
-.contact1{
+
+.contact1 {
     flex-basis: 50%;
     padding: 50px;
     flex-direction: column;
@@ -563,26 +561,27 @@ footer{
     display: flex;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 20px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.514);
 }
-.card p a{
+
+.card p a {
     color: white;
     text-decoration: none;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
 }
 
-.contactform{
+.contactform {
     flex-basis: 100%;
     padding: 100px;
     width: 100%;
@@ -593,19 +592,21 @@ footer{
     align-items: center;
 }
 
-.contactform form{
+.contactform form {
     display: flex;
     flex-direction: column;
 }
-.contactform form table{
+
+.contactform form table {
     width: 75%;
 }
-.contactform form table td{
+
+.contactform form table td {
     padding: 10px 20px;
     margin: 0 25px;
 }
 
-.contactform form table input{
+.contactform form table input {
     width: 50vw;
     padding: 5px 10px;
     background: transparent;
@@ -617,12 +618,12 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.contactform form table input:focus{
+.contactform form table input:focus {
     outline: none;
     border-bottom: 2px solid white;
 }
 
-.contactform form input[type="submit"]{
+.contactform form input[type="submit"] {
     width: 200px;
     padding: 10px 20px;
     margin: 20px;
@@ -636,13 +637,15 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.contactform form input[type="submit"]:hover{
+.contactform form input[type="submit"]:hover {
     background: white;
     color: black;
 }
 
+
 /* thankyou  */
-.thankyou{
+
+.thankyou {
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -653,16 +656,18 @@ footer{
 }
 
 @keyframes fadein {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
 
+
 /* warranty  */
-.warrantyform{
+
+.warrantyform {
     display: flex;
     height: 160vh;
     justify-content: center;
@@ -672,18 +677,20 @@ footer{
     z-index: -1;
 }
 
-.warrantyform form{
+.warrantyform form {
     width: 80vw;
 }
-.warrantyform form table{
+
+.warrantyform form table {
     width: 100%;
 }
-.warrantyform form table td{
+
+.warrantyform form table td {
     padding: 10px 20px;
     margin: 0 25px;
 }
 
-.warrantyform form table input[type = "text"]{
+.warrantyform form table input[type="text"] {
     width: 100%;
     padding: 5px 10px;
     background: transparent;
@@ -696,12 +703,12 @@ footer{
     outline: none;
 }
 
-.warrantyform form table input[type = "text"]:focus{
+.warrantyform form table input[type="text"]:focus {
     outline: none;
     border-bottom: 2px solid white;
 }
 
-.warrantyform form input[type="date"]{
+.warrantyform form input[type="date"] {
     width: 25%;
     padding: 5px 10px;
     background: transparent;
@@ -712,22 +719,22 @@ footer{
     font-size: 16px;
     transition: all 0.5s ease-in-out;
 }
-.warrantyform form input[type="date"]:hover{
+
+.warrantyform form input[type="date"]:hover {
     outline: none;
     background-color: white;
     color: #000;
     border-radius: 15px;
 }
 
-.warrantyform form input[type="radio"]{
+.warrantyform form input[type="radio"] {
     margin: 10px 10px 0px 0;
     color: white;
     font-size: 16px;
     transition: all 0.5s ease-in-out;
-
 }
 
-.warrantyform form button[type="submit"]{
+.warrantyform form button[type="submit"] {
     padding: 10px 20px;
     margin: 20px 0;
     align-self: flex-end;
@@ -740,12 +747,12 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.warrantyform form button[type="submit"]:hover{
+.warrantyform form button[type="submit"]:hover {
     background: white;
     color: black;
 }
 
-.warrantyform form input[type="file"]{
+.warrantyform form input[type="file"] {
     margin: 10px 10px 0px 0;
     color: white;
     font-size: 16px;
@@ -755,15 +762,13 @@ footer{
 }
 
 
-
-
 /* blog  */
-.par{
-  margin: auto;
-  
-  
+
+.par {
+    margin: auto;
 }
-.blog{
+
+.blog {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -780,13 +785,13 @@ footer{
     gap: 20px;
 }
 
-.blog div{
+.blog div {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.par{
+.par {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -795,27 +800,27 @@ footer{
     align-items: flex-start;
     margin: 25px;
     text-align: justify;
-    
 }
 
-.post1{
+.post1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.post1 img{
+.post1 img {
     border-radius: 10px;
     box-shadow: 2px 2px 5px white;
 }
 
-.breadcrumb{
+.breadcrumb {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.breadcrumb button{
+
+.breadcrumb button {
     padding: 10px 20px;
     font-size: 18px;
     color: white;
@@ -826,38 +831,39 @@ footer{
     transition: all 0.5s ease-in-out;
 }
 
-.breadcrumb button a:hover{
+.breadcrumb button a:hover {
     color: black;
 }
 
-.breadcrumb button:hover{
+.breadcrumb button:hover {
     background: white;
     color: black;
 }
 
-.breadcrumb a{
+.breadcrumb a {
     text-decoration: none;
     font-size: 18px;
     color: rgb(0, 0, 0);
 }
 
-.search-btn{
+.search-btn {
     position: fixed;
     top: 125px;
     right: 50px;
     width: auto;
 }
-.search-alignment{
+
+.search-alignment {
     display: flex;
     align-items: center;
 }
 
-.search-alignment i{
+.search-alignment i {
     font-size: 20px;
     color: black;
 }
 
-.search-alignment input{
+.search-alignment input {
     padding: 10px;
     font-size: 20px;
     background: transparent;
@@ -868,12 +874,12 @@ footer{
     outline: none;
 }
 
-.search-alignment input:focus{
+.search-alignment input:focus {
     outline: none;
     border-color: #fff;
 }
 
-.search-alignment button{
+.search-alignment button {
     padding: 10px;
     font-size: 20px;
     background: #fff;
@@ -1017,7 +1023,8 @@ footer{
     transform: translateX(0) scale(1);
 }
 
-.prodtable, .prodtable1 {
+.prodtable,
+.prodtable1 {
     margin-left: 60px;
     width: 600px;
     border-collapse: collapse;
@@ -1025,18 +1032,22 @@ footer{
 }
 
 .prodtable th,
-.prodtable td, .prodtable1 th, .prodtable1 td {
+.prodtable td,
+.prodtable1 th,
+.prodtable1 td {
     padding: 10px;
     border-bottom: 1px solid white;
 }
 
-.prodtable th, .prodtable1 th {
+.prodtable th,
+.prodtable1 th {
     background-color: #111;
     font-weight: bold;
     text-align: left;
 }
 
-.prodtable td, .prodtable1 td {
+.prodtable td,
+.prodtable1 td {
     text-align: left;
 }
 
@@ -1134,7 +1145,6 @@ footer{
 }
 
 .matteheadppf {
-
     margin: 0 auto;
     padding: 20px;
     position: absolute;
@@ -1248,8 +1258,10 @@ footer{
     transform: translateY(0);
 }
 
+
 /* mobile responsive */
-.mobile-nav{
+
+.mobile-nav {
     display: none;
     margin-top: 10vh;
     transition: all 0.3s ease-out;
@@ -1258,7 +1270,8 @@ footer{
     z-index: 1;
     position: relative;
 }
-.mobile-nav a{
+
+.mobile-nav a {
     background-color: #222;
     color: white;
     padding: 2px 20px;
@@ -1271,6 +1284,7 @@ footer{
     text-decoration: none;
     flex-direction: column;
 }
+
 .mobile-nav select {
     background-color: #222;
     color: white;
@@ -1286,19 +1300,21 @@ footer{
     outline: none;
     border: none;
 }
-.mobile-nav a:hover{
+
+.mobile-nav a:hover {
     background-color: rgb(149, 149, 149);
     color: black;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
 }
 
-.display-menu{
+.display-menu {
     max-height: 150px;
 }
-.display-btn{
+
+.display-btn {
     background: transparent;
     border: none;
     color: #fff;
@@ -1308,302 +1324,329 @@ footer{
 /* media responsiven for mobile */
 
 @media only screen and (max-width: 1200px) {
-    
-    .opener img{
+    .opener img {
         width: 500px;
     }
-    .opener h1{
+    .opener h1 {
         font-size: 20px;
     }
-    .content1 h2{
+    .content1 h2 {
         font-size: 16px;
     }
-    .textproduct h2{
+    .textproduct h2 {
         font-size: 18px;
     }
-    .textproduct p{
+    .textproduct p {
         font-size: 16px;
     }
-    .benefitinside{
+    .benefitinside {
         margin: 25px;
         font-size: 12px;
     }
-    .benefitinside h1{
+    .benefitinside h1 {
         font-size: 20px;
     }
-    footer{
+    footer {
         gap: 50px;
         justify-content: space-around;
     }
-    .companyinfo p{
+    .companyinfo p {
         font-size: 16px;
     }
-    .address p{
+    .address p {
         font-size: 16px;
     }
-    .nav-links a{
+    .nav-links a {
         font-size: 16px;
     }
-    .matteheadppf{
+    .matteheadppf {
         top: 50%;
     }
-    .matte_text{
+    .matte_text {
         font-size: 16px;
     }
-    .cppfproduct{
+    .cppfproduct {
         font-size: 16px;
     }
-    .withincontent img, .withincontent2 img{
+    .withincontent img,
+    .withincontent2 img {
         height: 50px;
     }
-    .withincontent h3, .withincontent2 h3{
+    .withincontent h3,
+    .withincontent2 h3 {
         font-size: 16px;
     }
-    .withincontent h2, .withincontent2 h2{
+    .withincontent h2,
+    .withincontent2 h2 {
         font-size: 18px;
     }
-    .blog img{
+    .blog img {
         height: 250px;
     }
-    .blog p{
+    .blog p {
         font-size: 16px;
     }
-    .blog{
+    .blog {
         width: 100%;
         height: 350px;
     }
-    .contactform h1, .contact1 h1, .text-overlay-clear h2, .text-overlay h2{
+    .contactform h1,
+    .contact1 h1,
+    .text-overlay-clear h2,
+    .text-overlay h2 {
         font-size: 40px;
     }
-    .contactform h2, .contact1 h2{
+    .contactform h2,
+    .contact1 h2 {
         font-size: 20px;
     }
-    .contactform{
+    .contactform {
         padding: 75px;
     }
-    .search-btn{
+    .search-btn {
         display: none;
     }
-    .par{
+    .par {
         margin-top: 75px;
     }
-    .prodtable, .table,.prodtable1, .table1{
+    .prodtable,
+    .table,
+    .prodtable1,
+    .table1 {
         margin: 0;
         width: fit-content;
     }
-    .textproduct{
+    .textproduct {
         padding: 10px;
     }
-    .textproduct1{
+    .textproduct1 {
         padding-left: 75px;
     }
-    .textproduct2{
+    .textproduct2 {
         padding-right: 75px;
     }
-    .animate-left{
+    .animate-left {
         font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .productinside img{
+    .productinside img {
         height: 300px;
         width: auto;
     }
-    .textproduct{
+    .textproduct {
         height: 300px;
-        padding: 20px;;
+        padding: 20px;
+        ;
     }
-    .product{
+    .product {
         height: 310px;
     }
-    .img2 img{
+    .img2 img {
         height: 290px;
     }
-    .text-overlay h2, .text-overlay-clear h2{
+    .text-overlay h2,
+    .text-overlay-clear h2 {
         font-size: 40px;
     }
-    .matteheadppf{
+    .matteheadppf {
         padding: 0;
         top: 70%;
     }
-    
-    .matte_text{
+    .matte_text {
         font-size: 14px;
     }
-    .content-wrapper p{
+    .content-wrapper p {
         font-size: 14px;
         text-align: justify;
     }
-    .prodtable, .prodtable1{
+    .prodtable,
+    .prodtable1 {
         font-size: 14px;
     }
-    .warrantyform h2{
+    .warrantyform h2 {
         font-size: 20px;
     }
-    .warrantyform form table input[type = "text"], .warrantyform form input[type="date"]{
+    .warrantyform form table input[type="text"],
+    .warrantyform form input[type="date"] {
         font-size: 14px;
     }
-    .warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+    .warrantyform form button[type="submit"],
+    .contactform form input[type="submit"] {
         font-size: 16px;
         width: 200px;
     }
-    .contact1 h1{
+    .contact1 h1 {
         font-size: 32px;
     }
-    .contact1 h2{
+    .contact1 h2 {
         font-size: 16px;
     }
-    .contactform h1{
+    .contactform h1 {
         font-size: 32px;
     }
-    .contactform form table td{
+    .contactform form table td {
         font-size: 16px;
     }
-    footer{
+    footer {
         gap: 20px;
     }
-    .mySlides h1{
+    .mySlides h1 {
         font-size: 32px;
     }
-    .textproduct1{
+    .textproduct1 {
         padding-left: 50px;
     }
-    .textproduct2{
+    .textproduct2 {
         padding-right: 50px;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .mySlides h1{
+    .mySlides h1 {
         font-size: 24px;
     }
-    .nav-item, #products, .nav-item select option, .text, .textproduct p, .copyright, .content1 h2,.blog p, .content-wrapper h4, .textproduct a button{
+    .nav-item,
+    #products,
+    .nav-item select option,
+    .text,
+    .textproduct p,
+    .copyright,
+    .content1 h2,
+    .blog p,
+    .content-wrapper h4,
+    .textproduct a button {
         font-size: 14px;
     }
-    .textproduct h2, .warrantyform h2{
+    .textproduct h2,
+    .warrantyform h2 {
         font-size: 16px;
     }
-    .companyinfo, .address{
+    .companyinfo,
+    .address {
         flex-basis: 35%;
     }
-    .logo{
+    .logo {
         width: 200px;
     }
-    .warrantyform{
+    .warrantyform {
         padding: 0 20px;
         margin-top: 75px;
         height: auto;
     }
-    .blog img{
+    .blog img {
         height: 200px;
     }
-    .blog{
+    .blog {
         align-items: center;
         height: 300px;
         padding: 5px;
     }
-    .text-overlay-clear h2, .text-overlay h2{
+    .text-overlay-clear h2,
+    .text-overlay h2 {
         font-size: 32px;
     }
-    .opener img{
+    .opener img {
         width: 300px;
     }
-    .opener{
+    .opener {
         left: 33%;
     }
-    .productinside img{
+    .productinside img {
         height: 150px;
     }
-    .product{
+    .product {
         height: 160px;
     }
-    .productinside{
+    .productinside {
         height: 160px;
         width: 270px;
     }
-    .textproduct{
+    .textproduct {
         height: 150px;
         padding: 0;
     }
-    .textproduct a button{
+    .textproduct a button {
         height: 25px;
     }
-    .img2 img{
+    .img2 img {
         height: 140px;
     }
-    .slideshow-container{
+    .slideshow-container {
         height: 30vh;
     }
-    .left img{
+    .left img {
         width: 300px;
     }
-    .benefit{
+    .benefit {
         gap: 0;
     }
-    .matteheadppf{
+    .matteheadppf {
         margin: 0;
     }
-    .animate-left{
+    .animate-left {
         margin: 0;
     }
-    .textproduct1{
+    .textproduct1 {
         padding-left: 25px;
     }
-    .textproduct2{
+    .textproduct2 {
         padding-right: 25px;
     }
-    .matte_img{
+    .matte_img {
         height: auto;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #navigation div ul{
+    #navigation div ul {
         display: none;
     }
-    .logo{
+    .logo {
         width: 125px;
     }
-    .mobile-menu{
+    .mobile-menu {
         display: block;
     }
-    .mobile-nav{
+    .mobile-nav {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin-top: 60px;
     }
-    .hide{
+    .hide {
         height: max-content;
         transform: all 0.5s ease-in-out;
         opacity: 1;
     }
-    .opener{
+    .opener {
         left: 30%;
     }
-    .opener img{
+    .opener img {
         width: 200px;
     }
-    .text-overlay-clear h2, .text-overlay h2{
+    .text-overlay-clear h2,
+    .text-overlay h2 {
         font-size: 20px;
     }
-    .text-overlay-clear, .text-overlay{
+    .text-overlay-clear,
+    .text-overlay {
         left: 25%;
         top: 10%;
         z-index: 0;
     }
-    .text-overlay{
+    .text-overlay {
         margin: 0;
         margin-left: 25px;
     }
-    .matte_img{
+    .matte_img {
         height: auto;
     }
-    .matteheadppf{
+    .matteheadppf {
         top: 40%;
     }
-    .clearcontainer{
+    .clearcontainer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1612,74 +1655,99 @@ footer{
         margin: 30px;
         padding: 30px 10px;
     }
-    
-    .cleardiv{
+    .cleardiv {
         width: 100%;
         margin: 20px;
     }
-    .opener h1, .mySlides h1, .benefitmain h1, .contact1 h1, .contactform h1, .animate-left, .features{
+    .opener h1,
+    .mySlides h1,
+    .benefitmain h1,
+    .contact1 h1,
+    .contactform h1,
+    .animate-left,
+    .features {
         font-size: 16px;
     }
-    .content1 h2, .textproduct p, .textproduct h2, .textproduct a button, .benefitinside, .copyright, .text{
+    .content1 h2,
+    .textproduct p,
+    .textproduct h2,
+    .textproduct a button,
+    .benefitinside,
+    .copyright,
+    .text {
         font-size: 8px;
     }
-    footer, .companyinfo, .address, .address p, .social-icons a, .companyinfo p, .nav-links a, .warrantyform form table input[type = "text"], .warrantyform form input[type="date"], .warrantyform form input[type="radio"],.warrantyform form button[type="submit"], .contactform form input[type="submit"], .matte_text{
+    footer,
+    .companyinfo,
+    .address,
+    .address p,
+    .social-icons a,
+    .companyinfo p,
+    .nav-links a,
+    .warrantyform form table input[type="text"],
+    .warrantyform form input[type="date"],
+    .warrantyform form input[type="radio"],
+    .warrantyform form button[type="submit"],
+    .contactform form input[type="submit"],
+    .matte_text {
         font-size: 10px;
     }
-    .text{
+    .text {
         padding: 0;
     }
-    .textproduct a button{
+    .textproduct a button {
         height: 18px;
         width: 75px;
         font-size: 8px;
     }
-    .textproduct{
+    .textproduct {
         gap: 5px;
         height: auto;
     }
-    .left img{
+    .left img {
         width: 200px;
     }
-    .splitdiv{
+    .splitdiv {
         height: 30vh;
     }
-    .benefit{
+    .benefit {
         flex-direction: column;
         align-items: center;
     }
-    .benefitinside{
+    .benefitinside {
         height: 150px;
     }
-    .benefitmain{
+    .benefitmain {
         height: max-content;
         width: 100%;
     }
-    footer{
+    footer {
         height: max-content;
         flex-direction: column;
         gap: 50px;
         align-items: center;
         text-align: center;
     }
-    .companyinfo, .address, .address p{
+    .companyinfo,
+    .address,
+    .address p {
         align-items: center;
         text-align: center;
     }
-    .textproduct1{
+    .textproduct1 {
         padding-left: 0px;
     }
-    .textproduct2{
+    .textproduct2 {
         padding-right: 0px;
     }
-    .textproduct{
+    .textproduct {
         padding: 5px;
         margin: 0;
     }
-    .slideshow-container{
+    .slideshow-container {
         height: 150px;
     }
-    .warrantyform form table td{
+    .warrantyform form table td {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -1687,45 +1755,53 @@ footer{
         margin: 0;
         padding: 10px 0;
     }
-    .warrantyform form table input[type="date"]{
+    .warrantyform form table input[type="date"] {
         width: 100%;
     }
-    .warrantyform form button[type="submit"], .contactform form input[type="submit"]{
+    .warrantyform form button[type="submit"],
+    .contactform form input[type="submit"] {
         width: 150px;
         align-items: flex-start;
     }
-    .warrantyform{
+    .warrantyform {
         margin: 0;
         gap: 25px;
         padding: 20px;
     }
-    .contact{
+    .contact {
         flex-direction: column;
         height: auto;
         margin: 25px 0;
     }
-    .contactform{
+    .contactform {
         height: auto;
         padding: 10px;
     }
-    .contact1{
+    .contact1 {
         padding: 25px;
     }
-    .card, .contactform form table td{
+    .card,
+    .contactform form table td {
         padding: 10px;
     }
-    .contact1 h2, .contactform h2, .contactform form table input, .card p a, .warrantyform h2, .cppfproduct, .cppfproduct2{
+    .contact1 h2,
+    .contactform h2,
+    .contactform form table input,
+    .card p a,
+    .warrantyform h2,
+    .cppfproduct,
+    .cppfproduct2 {
         font-size: 14px;
     }
-    .par{
+    .par {
         height: auto;
         margin: 20px;
     }
-    .breadcrumb button{
+    .breadcrumb button {
         font-size: 10px;
         padding: 10px;
     }
-    .blog{
+    .blog {
         height: auto;
         flex-direction: column;
         padding: 10px;
@@ -1733,80 +1809,84 @@ footer{
         text-align: justify;
         font-size: 10px;
     }
-    .blog img{
+    .blog img {
         width: 100%;
     }
-    .blog1{
+    .blog1 {
         flex-direction: column-reverse;
     }
-
     /* products  */
-    .maincontent{
+    .maincontent {
         flex-direction: column;
         height: auto;
         justify-content: center;
         align-items: center;
     }
-    .content-clear, .content-clear2, .content{
+    .content-clear,
+    .content-clear2,
+    .content {
         width: 100%;
         height: auto;
-
     }
-    .withincontent, .withincontent2{
+    .withincontent,
+    .withincontent2 {
         margin-top: 25px;
     }
 }
-@media only screen and (max-width: 400px){
-    .content1{
+
+@media only screen and (max-width: 400px) {
+    .content1 {
         padding: 10px;
     }
-    .right{
+    .right {
         padding-right: 10px;
     }
-    .opener{
+    .opener {
         top: 25%;
         left: 25%;
     }
-    .productinside img{
+    .productinside img {
         width: 100%;
         height: auto;
         border-bottom: solid white 5px;
     }
-    .product{
+    .product {
         height: auto;
         flex-direction: column;
         border: 5px white solid;
         overflow: hidden;
         padding: 0;
     }
-    .img2 img{
+    .img2 img {
         width: 100%;
         height: auto;
         border-bottom: solid white 5px;
     }
-    .productinside{
+    .productinside {
         height: auto;
         width: fit-content;
     }
-    .textproduct{
+    .textproduct {
         width: 100%;
-;       padding: 10px;
+        ;
+        padding: 10px;
     }
-    .textproduct p{
+    .textproduct p {
         font-weight: 100;
     }
-    .textproduct h2{
+    .textproduct h2 {
         font-weight: 900;
     }
-    .product1{
+    .product1 {
         flex-direction: column-reverse;
         align-items: flex-end;
     }
-    .textproduct1, .textproduct1 p{
+    .textproduct1,
+    .textproduct1 p {
         align-items: flex-end;
         text-align: right;
     }
-    .slideshow-container{
+    .slideshow-container {
         padding: 0 5%;
         flex-wrap: wrap;
         width: 90%;
@@ -1814,5 +1894,127 @@ footer{
     }
 }
 
+.companydiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0px;
+}
 
+.comapny_img {
+    border-radius: 50%;
+}
 
+.company_text {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.company_headings {
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.comapany_img_txt {
+    position: absolute;
+    top: 45%;
+    margin-left: 700px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    font-size: 36px;
+    text-shadow: 5px 5px 4px gray;
+    transition: transform 0.5s ease-in-out;
+}
+
+.comapany_img_txt.enlarged {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.company_vision {
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 400px;
+    height: 300px;
+    width: 800px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    background-color: rgb(12, 12, 12);
+    border: #bbb 5px solid;
+}
+
+.companys_headings {
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.companys_vision {
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 400px;
+    height: 300px;
+    width: 800px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    background-color: rgb(12, 12, 12);
+    border: #bbb 5px solid;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.companys_text {
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: justify;
+    transform: translateX(-100%);
+    /* Initially move the text out of view */
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.companysdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+.companys_texts {
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.companys_headingss {
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
